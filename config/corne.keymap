@@ -109,10 +109,10 @@
 //                    |     |     |     |      |     |     |     |
 //                    -------------------      -------------------
                     bindings = <
-   &trans      &bootloader   &trans        &trans        &trans        &trans          &trans  &trans  &trans  &trans  &trans  &trans
-   &trans      &trans        &trans        &trans        &trans        &trans          &trans  &trans  &trans  &trans  &trans  &trans
-   &trans      &trans        &trans        &trans        &trans        &trans          &trans  &trans  &trans  &trans  &trans  &trans
-                    	                   &trans        &trans        &trans          &trans  &trans  &trans
+   &trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans    &trans   &trans     &trans     &trans
+   &trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans    &trans   &trans     &trans     &trans
+   &trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans    &trans   &trans     &trans     &trans
+                    	   &trans  &trans  &trans    &trans    &trans    &trans
                     >;
                 };
 
