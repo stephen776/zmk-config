@@ -91,10 +91,10 @@
 //                    |     |     |     |      |     |     |     |
 //                    -------------------      -------------------
                     bindings = <
-   &trans  &trans  &trans  &trans  &trans  &trans    &trans    &kt HOME  &kp END  &kp PG_DN  &kp PG_UP  &kp DEL
-   &trans  &trans  &trans  &trans  &trans  &trans    &kp LEFT  &kp DOWN  &kp UP   &kp RIGHT  &trans     &trans
-   &trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans    &trans   &trans     &trans     &trans
-                    	     &trans  &trans  &trans    &trans    &trans    &trans
+   &trans  &trans  &trans  &trans  &trans    &trans    &trans    &kt HOME  &kp END  &kp PG_DN  &kp PG_UP  &kp DEL
+   &trans  &trans  &trans  &trans  &trans    &trans    &kp LEFT  &kp DOWN  &kp UP   &kp RIGHT  &trans     &trans
+   &trans  &trans  &trans  &trans  &trans    &trans    &trans    &trans    &trans   &trans     &trans     &trans
+                    	     &trans  &kp LALT  &trans    &trans    &trans    &trans
                     >;
                 };
 
