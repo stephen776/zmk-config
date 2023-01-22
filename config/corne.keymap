@@ -30,7 +30,7 @@
 // --------------------------------------     ---------------------------------------
 // |  tab |  q  |  w  |  e  |  r  |  t  |     |  y  |  u   |  i  |  o  |  p  | bksp |
 // --------------------------------------     ---------------------------------------
-// | ctrl |  a  |  s  |  d  |  f  |  g  |     |  h  |  j   |  k  |  l  |  ;  |  '   |
+// | cmd  |  a  |  s  |  d  |  f  |  g  |     |  h  |  j   |  k  |  l  |  ;  |  '   |
 // --------------------------------------     ---------------------------------------
 // | shft |  z  |  x  |  c  |  v  |  b  |     |  n  |  m   |  ,  |  .  |  /  | shft |
 // --------------------------------------     ---------------------------------------
@@ -55,10 +55,10 @@
 //                    |     |     |     |     |     |     |     |
 //                    -------------------     -------------------
                         bindings = <
-   &kp TILDE  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT   &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &trans
-   &trans     &trans    &trans  &trans    &trans    &trans      &kp PIPE   &kp MINUS  &kp PLUS         &kp LBRC  &kp RBRC  &trans
-   &trans     &trans    &trans  &trans    &trans    &trans      &kp BSLH   &kp EQUAL  &kp UNDER        &kp LBKT  &kp RBKT  &trans
-                                &trans    &trans    &trans      &trans     &trans     &trans
+   &trans  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT   &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &trans
+   &trans  &trans    &trans  &trans    &trans    &kp TILDE   &kp PIPE   &kp MINUS  &kp PLUS         &kp LBRC  &kp RBRC  &trans
+   &trans  &trans    &trans  &trans    &trans    &kp GRAVE   &kp BSLH   &kp EQUAL  &kp UNDER        &kp LBKT  &kp RBKT  &trans
+                             &trans    &trans    &trans      &trans     &trans     &trans
                         >;
                 };
 
@@ -73,12 +73,12 @@
 //                   |     |     |     |      |     |     |     |
 //                   -------------------      -------------------
                         bindings = <
-   &kp GRAVE  &kp N1   &kp N2   &kp N3   &kp N4   &kp N5     &kp N6    &kp N7    &kp N8   &kp N9     &kp N0     &trans
-   &trans     &trans   &trans   &trans   &trans   &trans     &kp LEFT  &kp DOWN  &kp UP   &kp RIGHT  &kp K_APP  &trans
-   &trans    &trans    &trans   &trans   &trans   &trans     &trans    &kt HOME  &kp END  &kp PG_DN  &kp PG_UP  &trans
-                    	          &trans   &trans   &trans     &trans    &trans    &trans
+   &trans  &kp N1   &kp N2   &kp N3   &kp N4   &kp N5     &kp N6    &kp N7    &kp N8   &kp N9     &kp N0     &trans
+   &trans  &trans   &trans   &trans   &trans   &trans     &kp LEFT  &kp DOWN  &kp UP   &kp RIGHT  &kp K_APP  &trans
+   &trans  &trans   &trans   &trans   &trans   &trans     &trans    &kt HOME  &kp END  &kp PG_DN  &kp PG_UP  &trans
+                    	       &trans   &trans   &trans     &trans    &trans    &trans
                         >;
-                };
+                
 
                 fn_layer {
 // --------------------------------------      -------------------------------------
