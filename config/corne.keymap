@@ -17,8 +17,8 @@
         conditional_layers {
           compatible = "zmk,conditonal-layers";
           tri_layer {
-            if-layers = <1 2>;
-            then-layer = <3>;
+            if-layers = <LOWER RAISE>;
+            then-layer = <ADJUST>;
           };
         };
 
@@ -54,10 +54,10 @@
 //                    |     |     |     |     |     |     |     |
 //                    -------------------     -------------------
                         bindings = <
-   &trans  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT   &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &trans
-   &trans  &trans    &trans  &trans    &trans    &kp TILDE   &kp PIPE   &kp MINUS  &kp PLUS         &kp LBRC  &kp RBRC  &trans
-   &trans  &trans    &trans  &trans    &trans    &kp GRAVE   &kp BSLH   &kp EQUAL  &kp UNDER        &kp LBKT  &kp RBKT  &trans
-                             &trans    &trans    &trans      &trans     &trans     &trans
+   &trans  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT   &kp CARET  &kp AMPS       &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &trans
+   &trans  &trans    &trans  &trans    &trans    &kp TILDE   &kp PIPE   &kp MINUS      &kp PLUS         &kp LBRC  &kp RBRC  &trans
+   &trans  &trans    &trans  &trans    &trans    &kp GRAVE   &kp BSLH   &kp EQUAL      &kp UNDER        &kp LBKT  &kp RBKT  &trans
+                             &trans    &trans    &trans      &trans     &lt RAISE DEL  &trans
                         >;
                 };
 
