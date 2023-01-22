@@ -34,13 +34,12 @@
 // --------------------------------------     ---------------------------------------
 // | shft |  z  |  x  |  c  |  v  |  b  |     |  n  |  m   |  ,  |  .  |  /  | shft |
 // --------------------------------------     ---------------------------------------
-
 //                    | ctl | alt | ret |     | rse | spc  | alt |
 //                    -------------------     --------------------
                         bindings = <
-   &kp TAB     &kp Q  &kp W  &kp E         &kp R          &kp T             &kp Y           &kp U      &kp I      &kp O    &kp P     &kp BSLH
-   &kp LGUI    &kp A  &kp S  &kp D         &kp F          &kp G             &kp H           &kp J      &kp K      &kp L    &kp SEMI  &kp SQT
-   &kp LSHFT   &kp Z  &kp X  &kp C         &kp V          &kp B             &kp N           &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
+   &kp TAB     &kp Q  &kp W  &kp E         &kp R          &kp T             &kp Y           &kp U            &kp I      &kp O    &kp P     &none
+   &kp LGUI    &kp A  &kp S  &kp D         &kp F          &kp G             &kp H           &kp J            &kp K      &kp L    &kp SEMI  &kp SQT
+   &kp LSHFT   &kp Z  &kp X  &kp C         &kp V          &kp B             &kp N           &kp M            &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
                              &mt LCTL ESC  &lt LOWER TAB  &mt LSHFT RET     &lt FN SPACE    &lt RAISE BSPC   &mt LALT DEL
                         >;
                 };
@@ -56,10 +55,10 @@
 //                    |     |     |     |     |     |     |     |
 //                    -------------------     -------------------
                         bindings = <
-   &kp TILDE  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT   &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &trans
-   &trans     &trans    &trans  &trans    &trans    &trans      &trans     &kp MINUS  &kp PLUS         &kp LBRC  &kp RBRC  &trans
-   &trans     &trans    &trans  &trans    &trans    &trans      &trans     &kp EQUAL  &kp UNDER        &kp LBKT  &kp RBKT  &trans
-                                &trans    &trans    &trans      &trans     &trans     &trans
+   &kp TILDE  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT   &kp CARET  &kp AMPS       &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &trans
+   &trans     &trans    &trans  &trans    &trans    &trans      &kp PIPE   &kp MINUS      &kp PLUS         &kp LBRC  &kp RBRC  &trans
+   &trans     &trans    &trans  &trans    &trans    &trans      &kp TILDE  &kp EQUAL      &kp UNDER        &kp LBKT  &kp RBKT  &trans
+                                &trans    &trans    &trans      &trans     &lt RAISE DEL  &trans
                         >;
                 };
 
@@ -93,7 +92,7 @@
 //                    -------------------      -------------------
                     bindings = <
    &trans  &trans  &trans  &trans  &trans    &trans    &trans    &kt HOME  &kp END  &kp PG_DN  &kp PG_UP  &kp DEL
-   &trans  &trans  &trans  &trans  &trans    &trans    &kp LEFT  &kp DOWN  &kp UP   &kp RIGHT  &trans     &trans
+   &trans  &trans  &trans  &trans  &trans    &trans    &kp LEFT  &kp DOWN  &kp UP   &kp RIGHT  &kp APP    &trans
    &trans  &trans  &trans  &trans  &trans    &trans    &trans    &trans    &trans   &trans     &trans     &trans
                     	     &trans  &kp LALT  &trans    &trans    &trans    &trans
                     >;
