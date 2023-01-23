@@ -43,7 +43,7 @@
             tapping-term-ms = <100>;                        // <---[[produces tap if held longer than tapping-term-ms]]
             quick-tap-ms = <200>;
             bindings = <&kp>, <&kp>;
-            hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29>;    // <---[[right-hand keys]]
+            hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29>;    // <---[[left-hand keys]]
           }; 
         };
 
@@ -90,17 +90,17 @@
 // -------------------------------------      -------------------------------------
 // |  `  |  1  |  2  |  3  |  4  |  5  |      |  6  |  7  |  8  |  9  |  0  |     |
 // -------------------------------------      -------------------------------------
-// |     |     |     |     |     |     |      | LEFT| DOWN|  UP |RIGHT| APP |     |
+// |     |     |     |     |     |     |      |     |     |     |     |     |     |
 // -------------------------------------      -------------------------------------
-// |     |     |     |     |     |     |      |     | HOME| END |PGUP |PGDN |     |
+// |     |     |     |     |     |     |      |     |     |     |     |     |     |
 // -------------------------------------      -------------------------------------
 //                   |     |     |     |      |     |     |     |
 //                   -------------------      -------------------
                         bindings = <
-   &trans  &kp N1   &kp N2   &kp N3   &kp N4   &kp N5     &kp N6    &kp N7    &kp N8   &kp N9   &kp N0   &trans
+   &trans  &kp N1   &kp N2   &kp N3   &kp N4   &kp N5     &kp N6   &kp N7    &kp N8   &kp N9   &kp N0   &trans
    &trans  &trans   &trans   &trans   &trans   &trans     &trans   &trans    &trans   &trans   &trans   &trans
-   &trans  &trans   &trans   &trans   &trans   &trans     &&trans   &trans    &trans   &trans   &trans   &trans
-                    	       &trans   &trans   &trans     &trans    &trans    &trans
+   &trans  &trans   &trans   &trans   &trans   &trans     &trans  &trans    &trans   &trans   &trans   &trans
+                    	       &trans   &trans   &trans     &trans   &trans    &trans
                         >;
                 
                 };
