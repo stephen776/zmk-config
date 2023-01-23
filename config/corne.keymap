@@ -55,16 +55,16 @@
 // |  tab |  q  |  w  |  e  |  r  |  t  |     |  y  |  u   |  i  |  o  |  p  | bksp |
 // --------------------------------------     ---------------------------------------
 // | cmd  |  a  |  s  |  d  |  f  |  g  |     |  h  |  j   |  k  |  l  |  ;  |  '   |
-// --------------------------------------     ---------------------------------------
+// --------------------------------------     -------------------------------------- -
 // | shft |  z  |  x  |  c  |  v  |  b  |     |  n  |  m   |  ,  |  .  |  /  | shft |
 // --------------------------------------     ---------------------------------------
 //                    | ctl | alt | ret |     | rse | spc  | alt |
 //                    -------------------     --------------------
                         bindings = <
-   &kp TAB   &kp Q  &kp W  &kp E         &kp R          &kp T             &kp Y           &kp U            &kp I      &kp O    &kp P     &none
-   &kp LGUI  &kp A  &kp S  &kp D         &kp F          &kp G             &kp H           &kp J            &kp K      &kp L    &kp SEMI  &kp SQT
-   &none     &kp Z  &kp X  &kp C         &kp V          &kp B             &kp N           &kp M            &kp COMMA  &kp DOT  &kp FSLH  &none 
-                           &mt LCTL ESC  &lt LOWER TAB  &mt LSHFT RET     &lt NAV SPACE   &lt RAISE BSPC   &mt LALT DEL
+   &kp TAB   &kp Q           &kp W           &kp E           &kp R           &kp T             &kp Y           &kp U            &kp I               &kp O              &kp P              &none
+   &kp LGUI  &kp A           &kp S           &kp D           &kp F           &kp G             &kp H           &kp J            &kp K               &kp L              &kp SEMI           &kp SQT
+   &none     &lh_pht LSFT Z  &lh_pht LCTL X  &lh_pht LALT C  &lh_pht LGUI V  &kp B             &kp N           &rh_pht RGUI M   &rh_pht RALT COMMA  &rh_pht RCTRL DOT  &rh_pht RSFT FSLH  &none 
+                                             &mt LCTL ESC    &lt LOWER TAB   &mt LSHFT RET     &lt NAV SPACE   &lt RAISE BSPC   &mt LALT DEL
                         >;
                 };
 
@@ -99,7 +99,7 @@
                         bindings = <
    &trans  &kp N1   &kp N2   &kp N3   &kp N4   &kp N5     &kp N6   &kp N7    &kp N8   &kp N9   &kp N0   &trans
    &trans  &trans   &trans   &trans   &trans   &trans     &trans   &trans    &trans   &trans   &trans   &trans
-   &trans  &trans   &trans   &trans   &trans   &trans     &trans  &trans    &trans   &trans   &trans   &trans
+   &trans  &trans   &trans   &trans   &trans   &trans     &trans   &trans    &trans   &trans   &trans   &trans
                     	       &trans   &trans   &trans     &trans   &trans    &trans
                         >;
                 
@@ -108,11 +108,11 @@
                 nav_layer {
 
 // -------------------------------------      -------------------------------------
-// |  `  |  1  |  2  |  3  |  4  |  5  |      |  6  |  7  |  8  |  9  |  0  |     |
+// |  `  |  1  |  2  |  3  |  4  |  5  |      |     | HOME| END |PGUP |PGDN |     |
 // -------------------------------------      -------------------------------------
 // |     |     |     |     |     |     |      | LEFT| DOWN|  UP |RIGHT| APP |     |
 // -------------------------------------      -------------------------------------
-// |     |     |     |     |     |     |      |     | HOME| END |PGUP |PGDN |     |
+// |     |     |     |     |     |     |      |     |     |     |     |     |     |
 // -------------------------------------      -------------------------------------
 //                   |     |     |     |      |     |     |     |
 //                   -------------------      -------------------
