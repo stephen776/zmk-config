@@ -62,8 +62,8 @@
 //                    -------------------     --------------------
                         bindings = <
    &kp TAB   &kp Q           &kp W           &kp E           &kp R           &kp T             &kp Y           &kp U            &kp I               &kp O              &kp P              &none
-   &kp LGUI  &kp A           &kp S           &kp D           &kp F           &kp G             &kp H           &kp J            &kp K               &kp L              &kp SEMI           &kp SQT
-   &none     &lh_pht LSFT Z  &lh_pht LCTL X  &lh_pht LALT C  &lh_pht LGUI V  &kp B             &kp N           &rh_pht RGUI M   &rh_pht RALT COMMA  &rh_pht RCTRL DOT  &rh_pht RSFT FSLH  &none 
+   &kp LGUI  &lh_pht LSFT A  &lh_pht LCTL S  &lh_pht LALT D  &lh_pht LGUI F  &kp G             &kp H           &rh_pht RGUI J   &kp K               &rh_pht RCTRL L    &rh_pht RSFT SEMI  &kp SQT
+   &none     &lh_pht LSFT Z  &lh_pht LCTL X  &lh_pht LALT C  &lh_pht LGUI V  &kp B             &kp N           &rh_pht RGUI M   &rh_pht ralt COMMA  &rh_pht RCTRL DOT  &rh_pht RSFT FSLH  &none 
                                              &mt LCTL ESC    &lt LOWER TAB   &mt LSHFT RET     &lt NAV SPACE   &lt RAISE BSPC   &mt LALT DEL
                         >;
                 };
