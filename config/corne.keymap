@@ -61,10 +61,10 @@
 //                    | ctl | alt | ret |     | rse | spc  | alt |
 //                    -------------------     --------------------
                         bindings = <
-   &kp TAB   &kp Q           &kp W           &kp E           &kp R           &kp T             &kp Y           &kp U            &kp I               &kp O              &kp P              &none
-   &kp LGUI  &lh_pht LSFT A  &lh_pht LCTL S  &lh_pht LALT D  &lh_pht LGUI F  &kp G             &kp H           &rh_pht RGUI J   &rh_pht RALT K      &rh_pht RCTRL L    &rh_pht RSFT SEMI  &kp SQT
-   &none     &kp Z           &kp X           &kp C           &kp V           &kp B             &kp N           &kp M            &kp COMMA           &kp DOT            &kp FSLH           &none 
-                                             &mt LCTL ESC    &lt LOWER TAB   &mt LSHFT RET     &lt NAV SPACE   &lt RAISE BSPC   &mt LALT DEL
+   &kp TAB   &kp Q           &kp W           &kp E           &kp R           &kp T             &kp Y          &kp U            &kp I            &kp O            &kp P              &none
+   &kp LGUI  &lh_pht LSFT A  &lh_pht LCTL S  &lh_pht LALT D  &lh_pht LGUI F  &kp G             &kp H          &rh_pht RGUI J   &rh_pht RALT K   &rh_pht RCTRL L  &rh_pht RSFT SEMI  &kp SQT
+   &none     &kp Z           &kp X           &kp C           &kp V           &kp B             &kp N          &kp M            &kp COMMA        &kp DOT          &kp FSLH           &none 
+                                             &kp ESC         &lt LOWER TAB   &mt LSHFT RET     &lt NAV SPACE  &lt RAISE BSPC   &kp DEL
                         >;
                 };
 
@@ -79,10 +79,10 @@
 //                    |     |     |     |     |     |     |     |
 //                    -------------------     -------------------
                         bindings = <
-   &trans  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT   &kp CARET  &kp AMPS       &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &trans
-   &trans  &trans    &trans  &trans    &trans    &kp TILDE   &kp PIPE   &kp MINUS      &kp PLUS         &kp LBRC  &kp RBRC  &trans
-   &trans  &trans    &trans  &trans    &trans    &kp GRAVE   &kp BSLH   &kp EQUAL      &kp UNDER        &kp LBKT  &kp RBKT  &trans
-                             &trans    &trans    &trans      &trans     &lt RAISE DEL  &trans
+   &trans  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT   &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &trans
+   &trans  &trans    &trans  &trans    &trans    &kp TILDE   &kp PIPE   &kp MINUS  &kp PLUS         &kp LBRC  &kp RBRC  &trans
+   &trans  &trans    &trans  &trans    &trans    &kp GRAVE   &kp BSLH   &kp EQUAL  &kp UNDER        &kp LBKT  &kp RBKT  &trans
+                             &trans    &trans    &trans      &trans     &trans     &trans
                         >;
                 };
 
