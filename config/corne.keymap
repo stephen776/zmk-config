@@ -122,7 +122,7 @@
                         bindings = <
    &trans  &trans   &trans   &trans   &trans   &trans     &kt HOME  &kp END   &kp PG_DN  &kp PG_UP  &trans     &trans
    &trans  &trans   &trans   &trans   &trans   &trans     &kp LEFT  &kp DOWN  &kp UP     &kp RIGHT  &kp K_APP  &trans
-   &trans  &trans   &trans   &trans   &trans   &trans     &trans    &trans    &trans     &trans     &trans     &trans
+   &trans  &trans   &trans   SCNSHT   &trans   &trans     &trans    &trans    &trans     &trans     &trans     &trans
                     	       &trans   &trans   &trans     &trans    &trans    &trans
                         >;
                 };
@@ -140,7 +140,7 @@
                     bindings = <
    &bootloader &none         &none         &none         &none         &none          &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
    &none       &kp F1        &kp F2        &kp F3        &kp F4        &kp F5         &kp F6      &kp F7        &kp F8        &kp F9        &kp F10       &none
-   &none       &kp F11       &kp F12       SCNSHT        &kp F14       &kp F15        &none       &none         &none         &none         &none         &none
+   &none       &kp F11       &kp F12       &none         &none         &none          &none       &none         &none         &none         &none         &none
                     	                     &none         &none         &none          &none       &none         &none 
                     >;
                 };
