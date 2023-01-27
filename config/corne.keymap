@@ -16,6 +16,12 @@
 
 // Hold Left Control, Shift, Alt and GUI and press
 #define SCNSHT &kp LC(LS(LA(LG(C))))
+#define CMD_A   &kp LG(A)
+#define CMD_S   &kp LG(S)
+#define CMD_C   &kp LG(C)
+#define CMD_V   &kp LG(V)
+#define CMD_X   &kp LG(X)
+#define CMD_Z   &kp LG(Z)
 
 / {
         conditional_layers {
@@ -83,8 +89,8 @@
 //                    -------------------     -------------------
                         bindings = <
    &trans  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT   &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &trans
-   &trans  &trans    &trans  &trans    &trans    &kp TILDE   &kp PIPE   &kp MINUS  &kp PLUS         &kp LBRC  &kp RBRC  &trans
-   &trans  &trans    &trans  &trans    &trans    &kp GRAVE   &kp BSLH   &kp EQUAL  &kp UNDER        &kp LBKT  &kp RBKT  &trans
+   &trans  CMD_A     CMD_S   &trans    &trans    &kp TILDE   &kp PIPE   &kp MINUS  &kp PLUS         &kp LBRC  &kp RBRC  &trans
+   &trans  CMD_Z     CMD_X   CMD_C     CMD_V     &kp GRAVE   &kp BSLH   &kp EQUAL  &kp UNDER        &kp LBKT  &kp RBKT  &trans
                              &trans    &trans    &trans      &trans     &trans     &trans
                         >;
                 };
