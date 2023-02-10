@@ -70,10 +70,10 @@
 //                    | ctl | alt | ret |     | rse | spc  | alt |
 //                    -------------------     --------------------
                         bindings = <
-   &none  &kp Q           &kp W           &kp E           &kp R           &kp T       &kp Y          &kp U            &kp I            &kp O            &kp P              &none
-   &none  &lh_pht LSFT A  &lh_pht LCTL S  &lh_pht LALT D  &lh_pht LGUI F  &kp G       &kp H          &rh_pht RGUI J   &rh_pht RALT K   &rh_pht RCTRL L  &rh_pht RSFT SEMI  &kp SQT
-   &none  &kp Z           &kp X           &kp C           &kp V           &kp B       &kp N          &kp M            &kp COMMA        &kp DOT          &kp FSLH           &none
-                                          &kp ESC         &lt LOWER TAB   &kp RET     &lt NAV SPACE  &lt RAISE BSPC   &kp DEL
+   &none  &kp Q           &kp W           &kp E           &kp R           &kp T          &kp Y          &kp U            &kp I            &kp O            &kp P              &none
+   &none  &lh_pht LSFT A  &lh_pht LCTL S  &lh_pht LALT D  &lh_pht LGUI F  &kp G          &kp H          &rh_pht RGUI J   &rh_pht RALT K   &rh_pht RCTRL L  &rh_pht RSFT SEMI  &kp SQT
+   &none  &kp Z           &kp X           &kp C           &kp V           &kp B          &kp N          &kp M            &kp COMMA        &kp DOT          &kp FSLH           &none
+                                          &kp ESC         &lt LOWER TAB   &lt NAV RET    &lt NAV SPACE  &lt RAISE BSPC   &kp DEL
                         >;
                 };
 
@@ -89,8 +89,8 @@
 //                    -------------------     -------------------
                         bindings = <
    &trans  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT   &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &trans
-   &trans  CMD_A     CMD_S   &trans    &trans    &kp TILDE   &kp PIPE   &kp MINUS  &kp PLUS         &kp LBRC  &kp RBRC  &trans
-   &trans  CMD_Z     CMD_X   CMD_C     CMD_V     &kp GRAVE   &kp BSLH   &kp EQUAL  &kp UNDER        &kp LBKT  &kp RBKT  &trans
+   &trans  &trans   &trans   &trans    &trans    &kp TILDE   &kp PIPE   &kp MINUS  &kp PLUS         &kp LBRC  &kp RBRC  &trans
+   &trans  &trans   &trans   &trans    &trans    &kp GRAVE   &kp BSLH   &kp EQUAL  &kp UNDER        &kp LBKT  &kp RBKT  &trans
                              &trans    &trans    &trans      &trans     &trans     &trans
                         >;
                 };
@@ -107,17 +107,16 @@
 //                   -------------------      -------------------
                         bindings = <
    &trans  &kp N1   &kp N2   &kp N3   &kp N4   &kp N5     &kp N6   &kp N7    &kp N8   &kp N9   &kp N0   &trans
+   &trans  &trans   &trans   &trans   &trans   &trans     &trans   &trans    &trans   &kp DQT  &kp SQT   &trans
    &trans  &kp F1   &kp F2   &kp F3   &kp F4   &kp F5     &kp F6   &kp F7    &kp F8   &kp F9   &kp F10  &trans
-   &trans  &trans   &trans   &trans   &trans   &trans     &trans   &trans    &trans   &trans   &trans   &trans
                     	       &trans   &trans   &trans     &trans   &trans    &trans
                         >;
-                
                 };
 
                 nav_layer {
 
 // -------------------------------------      -------------------------------------
-// |     |  1  |  2  |  3  |  4  |  5  |      |     | HOME| END |PGUP |PGDN |     |
+// |     |     |     |     |     |     |      |     | HOME| END |PGUP |PGDN |     |
 // -------------------------------------      -------------------------------------
 // |     |     |     |     |     |     |      | LEFT| DOWN|  UP |RIGHT| APP |     |
 // -------------------------------------      -------------------------------------
@@ -127,8 +126,8 @@
 //                   -------------------      -------------------
                         bindings = <
    &trans  &trans   &trans   &trans   &trans   &trans     &kt HOME  &kp END   &kp PG_DN  &kp PG_UP  &trans     &trans
-   &trans  &trans   &trans   &trans   &trans   &trans     &kp LEFT  &kp DOWN  &kp UP     &kp RIGHT  &kp K_APP  &trans
-   &trans  &trans   &trans   SCNSHT   &trans   &trans     &trans    &trans    &trans     &trans     &trans     &trans
+   &trans  CMD_A    CMD_S    &trans   &trans   &trans     &kp LEFT  &kp DOWN  &kp UP     &kp RIGHT  &kp K_APP  &trans
+   &trans  CMD_Z    CMD_X    CMD_C    CMD_V    &trans     &trans    &trans    &trans     &trans     &trans     &trans
                     	       &trans   &trans   &trans     &trans    &trans    &trans
                         >;
                 };
@@ -145,7 +144,7 @@
 //                    -------------------      -------------------
                     bindings = <
    &none       &bootloader   &none         &none         &none         &none          &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &none
-   &none       &none         &none         &none         &none         &none          &none       &none         &none         &none         &none         &none
+   &none       &none         SCNSHT        &none         &none         &none          &none       &none         &none         &none         &none         &none
    &none       &none         &none         &none         &none         &none          &none       &none         &none         &none         &none         &none
                     	                     &none         &none         &none          &none       &none         &none 
                     >;
