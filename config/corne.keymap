@@ -11,8 +11,7 @@
 #define DEFAULT 0
 #define LOWER   1
 #define RAISE   2
-#define NAV     3 
-#define ADJUST  4
+#define ADJUST  3
 
 // Hold Left Control, Shift, Alt and GUI and press
 #define SCNSHT &kp LC(LS(LA(LG(C))))
@@ -70,10 +69,10 @@
 //                    | ctl | alt | ret |     | rse | spc  | alt |
 //                    -------------------     --------------------
                         bindings = <
-   &none  &kp Q           &kp W           &kp E           &kp R           &kp T          &kp Y          &kp U            &kp I            &kp O            &kp P              &none
-   &none  &lh_pht LSFT A  &lh_pht LCTL S  &lh_pht LALT D  &lh_pht LGUI F  &kp G          &kp H          &rh_pht RGUI J   &rh_pht RALT K   &rh_pht RCTRL L  &rh_pht RSFT SQT   &none
-   &none  &kp Z           &kp X           &kp C           &kp V           &kp B          &kp N          &kp M            &kp COMMA        &kp DOT          &kp FSLH           &none
-                                          &kp ESC         &lt LOWER RET   &lt NAV TAB    &lt NAV BSPC   &lt RAISE SPACE  &kp DEL
+   &none  &kp Q           &kp W           &kp E           &kp R           &kp T      &kp Y      &kp U            &kp I            &kp O            &kp P              &none
+   &none  &lh_pht LSFT A  &lh_pht LCTL S  &lh_pht LALT D  &lh_pht LGUI F  &kp G      &kp H      &rh_pht RGUI J   &rh_pht RALT K   &rh_pht RCTRL L  &rh_pht RSFT SQT   &none
+   &none  &kp Z           &kp X           &kp C           &kp V           &kp B      &kp N      &kp M            &kp COMMA        &kp DOT          &kp FSLH           &none
+                                          &kp ESC         &lt LOWER RET   &kp TAB    &kp BSPC   &lt RAISE SPACE  &kp DEL
                         >;
                 };
 
@@ -81,17 +80,17 @@
 // --------------------------------------     --------------------------------------
 // |      |  !  |  @  |  #  |  $  |  %  |     |  ^  |  &  |  *  |  (  |  )  |      |
 // --------------------------------------     --------------------------------------
-// |      |     |     |     |     |  ~  |     |  |  |  -  |  +  |  {  |  }  |      |
+// |      |     |     |     |     |     |     |  |  |  -  |  +  |  {  |  }  |      |
 // --------------------------------------     --------------------------------------
-// |      |     |     |     |     |  `  |     |  \  |  =  |  _  |  [  |  ]  |      |
+// |      |     |     |     |     |     |     |  \  |  =  |  _  |  [  |  ]  |      |
 // --------------------------------------     --------------------------------------
 //                    |     |     |     |     |     |     |     |
 //                    -------------------     -------------------
                         bindings = <
-   &trans  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT   &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &trans
-   &trans  &trans   &trans   &trans    &trans    &kp TILDE   &kp PIPE   &kp MINUS  &kp PLUS         &kp LBRC  &kp RBRC  &trans
-   &trans  &trans   &trans   &trans    &trans    &kp GRAVE   &kp BSLH   &kp EQUAL  &kp UNDER        &kp LBKT  &kp RBKT  &trans
-                             &trans    &trans    &trans      &trans     &trans     &trans
+   &trans  &kp EXCL  &kp AT    &kp HASH  &kp DLLR  &kp PRCNT   &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &trans
+   &trans  &kp LSFT  &kp LCTL  &kp LALT  &kp LGUI  &trans      &kp PIPE   &kp MINUS  &kp PLUS         &kp LBRC  &kp RBRC  &trans
+   &trans  CMD_Z     CMD_X     CMD_C     CMD_V     &trans      &kp BSLH   &kp EQUAL  &kp UNDER        &kp LBKT  &kp RBKT  &trans
+                               &trans    &trans    &trans      &trans     &trans     &trans
                         >;
                 };
 
@@ -99,38 +98,20 @@
 // -------------------------------------      -------------------------------------
 // |     |  1  |  2  |  3  |  4  |  5  |      |  6  |  7  |  8  |  9  |  0  |     |
 // -------------------------------------      -------------------------------------
-// |     |     |     |     |     |     |      |     |     |     |     |     |     |
+// |     |  :  |  ;  |  ~  |  `  |     |      |LEFT |DOWN | UP  |RIGHT| APP |     |
 // -------------------------------------      -------------------------------------
-// |     |     |     |     |     |     |      |     |     |     |     |     |     |
-// -------------------------------------      -------------------------------------
-//                   |     |     |     |      |     |     |     |
-//                   -------------------      -------------------
-                        bindings = <
-   &trans  &kp N1    &kp N2    &kp N3   &kp N4   &kp N5     &kp N6    &kp N7    &kp N8   &kp N9     &kp N0     &trans
-   &trans  &kp COLON &kp SEMI  &trans   &trans   &trans     &kp LEFT  &kp DOWN  &kp UP   &kp RIGHT  &kp K_APP  &trans
-   &trans  &kp F1    &kp F2    &kp F3   &kp F4   &kp F5     &kp F6    &kp F7    &kp F8   &kp F9     &kp F10    &trans
-                    	       &trans   &trans   &trans     &trans   &trans    &trans
-                        >;
-                };
-
-                nav_layer {
-
-// -------------------------------------      -------------------------------------
-// |     |     |     |     |     |     |      |     | HOME| END |PGUP |PGDN |     |
-// -------------------------------------      -------------------------------------
-// |     |     |     |     |     |     |      | LEFT| DOWN|  UP |RIGHT| APP |     |
-// -------------------------------------      -------------------------------------
-// |     |     |     |     |     |     |      |     |     |     |     |     |     |
+// |     |     |     |     |     |     |      |HOME |PGDN |PGUP | END |     |     |
 // -------------------------------------      -------------------------------------
 //                   |     |     |     |      |     |     |     |
 //                   -------------------      -------------------
                         bindings = <
-   &trans  &trans   &trans   &trans   &trans   &trans     &kt HOME  &kp END   &kp PG_DN  &kp PG_UP  &trans     &trans
-   &trans  CMD_A    CMD_S    &trans   &trans   &trans     &kp LEFT  &kp DOWN  &kp UP     &kp RIGHT  &kp K_APP  &trans
-   &trans  CMD_Z    CMD_X    CMD_C    CMD_V    &trans     &trans    &trans    &trans     &trans     &trans     &trans
-                    	       &trans   &trans   &trans     &trans    &trans    &trans
+   &trans  &kp N1     &kp N2    &kp N3     &kp N4     &kp N5     &kp N6    &kp N7    &kp N8     &kp N9     &kp N0     &trans
+   &trans  &kp COLON  &kp SEMI  &kp TILDE  &kp GRAVE  &trans     &kp LEFT  &kp DOWN  &kp UP     &kp RIGHT  &kp K_APP  &trans
+   &trans  &trans     &trans    &trans     &trans     &trans     &kt HOME  &kp PG_DN &kp PG_UP  &kp END    &trans     &trans
+                      	        &trans     &trans     &trans     &trans   &trans    &trans
                         >;
                 };
+
 
                 adjust_layer {
 // --------------------------------------      -------------------------------------
@@ -138,15 +119,15 @@
 // --------------------------------------      -------------------------------------
 // |      |     |     |     |     |     |      |     |     |     |     |     |     |
 // --------------------------------------      -------------------------------------
-// |      |     |     |     |     |     |      |     |     |     |     |     |     |
+// |      |  F1 |  F2 |  F3 |  F4 |  F5 |      |  F6 |  F7 |  F8 |  F9 | F10 |     |
 // --------------------------------------      -------------------------------------
 //                    |     |     |     |      |     |     |     |
 //                    -------------------      -------------------
                     bindings = <
-   &none       &bootloader   &none         &none         &none         &none          &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &none
-   &none       &none         SCNSHT        &none         &none         &none          &none       &none         &none         &none         &none         &none
-   &none       &none         &none         &none         &none         &none          &none       &none         &none         &none         &none         &none
-                    	                     &none         &none         &none          &none       &none         &none 
+   &none    &bootloader   &none     &none    &none     &none     &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &none
+   &none    &none         SCNSHT    &none    &none     &none     &none       &none         &none         &none         &none         &none
+   &none    &kp F1        &kp F2    &kp F3   &kp F4    &kp F5    &kp F6      &kp F7        &kp F8        &kp F9        &kp F10       &none
+                                    &none    &none     &none     &none       &none         &none 
                     >;
                 };
 
