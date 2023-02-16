@@ -61,7 +61,7 @@
                 default_layer {
 // --------------------------------------     ---------------------------------------
 // |      |  q  |  w  |  e  |  r  |  t  |     |  y  |  u   |  i  |  o  |  p  |      |
-// --------------------------------------     ---------------------------------------
+/ --------------------------------------     ---------------------------------------
 // |      |  a  |  s  |  d  |  f  |  g  |     |  h  |  j   |  k  |  l  |  ;  |      |
 // --------------------------------------     ---------------------------------------
 // |      |  z  |  x  |  c  |  v  |  b  |     |  n  |  m   |  ,  |  .  |  /  |      |
@@ -88,7 +88,7 @@
 //                    -------------------     -------------------
                         bindings = <
    &trans  &kp EXCL  &kp AT    &kp HASH  &kp DLLR  &kp PRCNT   &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &trans
-   &trans  &kp LSFT  &kp LCTL  &kp LALT  &kp LGUI  &trans      &kp PIPE   &kp MINUS  &kp PLUS         &kp LBRC  &kp RBRC  &trans
+   &trans  &kp LSFT  &kp LCTL  &kp LALT  &kp LGUI  &trans      &kp PIPE   &kp PLUS   &kp MINUS         &kp LBRC  &kp RBRC  &trans
    &trans  CMD_Z     CMD_X     CMD_C     CMD_V     &trans      &kp BSLH   &kp EQUAL  &kp UNDER        &kp LBKT  &kp RBKT  &trans
                                &trans    &trans    &trans      &trans     &trans     &trans
                         >;
