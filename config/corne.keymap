@@ -89,7 +89,7 @@
                         bindings = <
    &trans  &kp EXCL   &kp AT    &kp HASH   &kp DLLR   &kp PRCNT   &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &trans
    &trans  &kp COLON  &kp SEMI  &kp TILDE  &kp GRAVE  &trans      &kp PIPE   &kp PLUS   &kp MINUS        &kp LBRC  &kp RBRC  &trans
-   &trans  CMD_Z      CMD_X     CMD_C      CMD_V      &trans      &kp BSLH   &kp EQUAL  &kp UNDER        &kp LBKT  &kp RBKT  &trans
+   &trans  CMD_Z      CMD_X     CMD_C      &none      CMD_V       &kp BSLH   &kp EQUAL  &kp UNDER        &kp LBKT  &kp RBKT  &trans
                                 &trans     &trans     &trans      &trans     &trans     &trans
                         >;
                 };
