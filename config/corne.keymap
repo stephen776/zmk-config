@@ -15,7 +15,7 @@
 #define MOUSE   4 
 #define ADJUST  5
 
-#define XXXXX XXXXX
+#define XXXXX &none
 #define _____ &trans
 
 // Hold Left Control, Shift, Alt and GUI and press
