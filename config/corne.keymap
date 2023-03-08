@@ -81,7 +81,7 @@
    XXXXX  &kp Q   &kp W           &kp F           &kp P           &kp B          &kp J          &kp L            &kp U            &kp Y            &kp SQT   XXXXX 
    XXXXX  &kp A   &lh_pht LCTL R  &lh_pht LALT S  &lh_pht LGUI T  &kp G          &kp M          &rh_pht RGUI N   &rh_pht RALT E   &rh_pht RCTRL I  &kp  O    XXXXX 
    XXXXX  &kp Z   &kp X           &kp C           &kp D           &kp V          &kp K          &kp H            &kp COMMA        &kp DOT          &kp FSLH  XXXXX 
-                                  &lt MOUSE ESC   &mt LSFT RET    &lt SYM TAB    &lt SYM BSPC   &lt NAV SPACE    &kp DEL
+                                  &lt MOUSE ESC   &mt LSFT RET    &lt SYM TAB    &lt NUM BSPC   &lt NAV SPACE    &kp DEL
                         >;
                 };
 
@@ -97,7 +97,7 @@
 //                    -------------------     -------------------
                         bindings = <
    XXXXX  &kp EXCL   &kp AT    &kp HASH   &kp DLLR   &kp PRCNT   &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  XXXXX 
-   XXXXX  &kp COLON  &kp SEMI  &kp TILDE  &kp GRAVE  _____       &kp PIPE   &kp PLUS   &kp MINUS        &kp LBRC  &kp RBRC  XXXXX 
+   XXXXX  &kp COLON  &kp SEMI  &kp TILDE  &kp GRAVE  XXXXX       &kp PIPE   &kp PLUS   &kp MINUS        &kp LBRC  &kp RBRC  XXXXX 
    XXXXX  CMD_Z      CMD_X     CMD_C      XXXXX      CMD_V       &kp BSLH   &kp EQUAL  &kp UNDER        &kp LBKT  &kp RBKT  XXXXX 
                                _____      _____      _____       _____      _____      _____
                         >;
