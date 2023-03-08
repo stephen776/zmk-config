@@ -71,10 +71,10 @@
 //                    | ESC | RET | TAB |     | BSPC| SPC  | DET |
 //                    -------------------     --------------------
                         bindings = <
-   &none  &kp Q   &kp W           &kp F           &kp P           &kp B            &kp J            &kp L            &kp U            &kp Y            &kp SQT    &none
-   &none  &kp A   &lh_pht LCTL R  &lh_pht LALT S  &lh_pht LGUI T  &kp G            &kp M            &rh_pht RGUI N   &rh_pht RALT E   &rh_pht RCTRL I  &kp  O     &none
-   &none  &kp Z   &kp X           &kp C           &kp D           &kp V            &kp K            &kp H            &kp COMMA        &kp DOT          &kp FSLH   &none
-                                  &kp ESC         &mt LSFT RET    &lt LOWER TAB    &lt RAISE BSPC   &lt RAISE SPACE  &kp DEL
+   &none  &kp Q   &kp W           &kp F           &kp P           &kp B          &kp J          &kp L            &kp U            &kp Y            &kp SQT    &none
+   &none  &kp A   &lh_pht LCTL R  &lh_pht LALT S  &lh_pht LGUI T  &kp G          &kp M          &rh_pht RGUI N   &rh_pht RALT E   &rh_pht RCTRL I  &kp  O     &none
+   &none  &kp Z   &kp X           &kp C           &kp D           &kp V          &kp K          &kp H            &kp COMMA        &kp DOT          &kp FSLH   &none
+                                  &lt MOUSE ESC   &mt LSFT RET    &lt SYM TAB    &lt SYM BSPC   &lt NAV SPACE    &kp DEL
                         >;
                 };
 
