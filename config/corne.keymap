@@ -133,7 +133,7 @@
 //                   -------------------      -------------------
                         bindings = <
    XXXXX  _____   _____     _____      _____      _____     &kt HOME  &kp PG_DN  &kp PG_UP  &kp END    _____     XXXXX 
-   XXXXX  _____   &kp LCTL  &kp LALT   &kp LGUI   XXXXX     &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &kp K_APP XXXXX 
+   XXXXX  _____   &kp LCTL  &kp LALT   &kp LGUI   _____     &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &kp K_APP XXXXX 
    XXXXX  _____   _____     _____      _____      _____     _____     _____      _____      _____      _____     XXXXX 
                    	        _____      _____      _____     _____     _____      _____
                         >;
