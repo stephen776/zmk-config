@@ -9,9 +9,11 @@
 #include <dt-bindings/zmk/bt.h>
 
 #define DEFAULT 0
-#define LOWER   1
-#define RAISE   2
-#define ADJUST  3
+#define SYM     1
+#define NUM     2
+#define NAV     3 
+#define MSE     4 
+#define ADJ     5
 
 // Hold Left Control, Shift, Alt and GUI and press
 #define SCNSHT &kp LC(LS(LA(LG(C))))
@@ -26,8 +28,8 @@
         conditional_layers {
           compatible = "zmk,conditional-layers";
           tri_layer {
-            if-layers = <LOWER RAISE>;
-            then-layer = <ADJUST>;
+            if-layers = <SYM NUM>;
+            then-layer = <ADJ>;
           };
         };
 
@@ -37,8 +39,8 @@
             label = "LEFT_POSITIONAL_HOLD_TAP";
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <200>;                        // <---[[produces tap if held longer than tapping-term-ms]]
-            quick-tap-ms = <200>;
+            tapping-term-ms = <250>;                        // <---[[produces tap if held longer than tapping-term-ms]]
+            quick-tap-ms = <175>;
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 36 37 38 39 40 41>;    // <---[[right-hand keys]]
           }; 
@@ -48,8 +50,8 @@
             label = "RIGHT_POSITIONAL_HOLD_TAP";
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <200>;                        // <---[[produces tap if held longer than tapping-term-ms]]
-            quick-tap-ms = <200>;
+            tapping-term-ms = <250>;                        // <---[[produces tap if held longer than tapping-term-ms]]
+            quick-tap-ms = <175>;
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38 39 40 41>;    // <---[[left-hand keys]]
           }; 
@@ -66,13 +68,13 @@
 // --------------------------------------     ---------------------------------------
 // |      |  z  |  x  |  c  |  d  |  v  |     |  k  |  h   |  ,  |  .  |  /  |      |
 // --------------------------------------     ---------------------------------------
-//                    | ctl | alt | ret |     | rse | spc  | alt |
+//                    | ESC | RET | TAB |     | BSPC| SPC  | DET |
 //                    -------------------     --------------------
                         bindings = <
-   &none  &kp Q           &kp W           &kp F           &kp P           &kp B      &kp J      &kp L            &kp U            &kp Y            &kp SQT            &none
-   &none  &lh_pht LSFT A  &lh_pht LCTL R  &lh_pht LALT S  &lh_pht LGUI T  &kp G      &kp M      &rh_pht RGUI N   &rh_pht RALT E   &rh_pht RCTRL I  &rh_pht RSFT O     &none
-   &none  &kp Z           &kp X           &kp C           &kp D           &kp V      &kp K      &kp H            &kp COMMA        &kp DOT          &kp FSLH           &none
-                                          &kp ESC         &lt LOWER RET   &kp TAB    &kp BSPC   &lt RAISE SPACE  &kp DEL
+   &none  &kp Q   &kp W           &kp F           &kp P           &kp B            &kp J            &kp L            &kp U            &kp Y            &kp SQT    &none
+   &none  &kp A   &lh_pht LCTL R  &lh_pht LALT S  &lh_pht LGUI T  &kp G            &kp M            &rh_pht RGUI N   &rh_pht RALT E   &rh_pht RCTRL I  &kp  O     &none
+   &none  &kp Z   &kp X           &kp C           &kp D           &kp V            &kp K            &kp H            &kp COMMA        &kp DOT          &kp FSLH   &none
+                                  &kp ESC         &mt LSFT RET    &lt LOWER TAB    &lt RAISE BSPC   &lt RAISE SPACE  &kp DEL
                         >;
                 };
 
@@ -87,9 +89,9 @@
 //                    |     |     |     |     |     |     |     |
 //                    -------------------     -------------------
                         bindings = <
-   &trans  &kp EXCL   &kp AT    &kp HASH   &kp DLLR   &kp PRCNT   &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &trans
-   &trans  &kp COLON  &kp SEMI  &kp TILDE  &kp GRAVE  &trans      &kp PIPE   &kp PLUS   &kp MINUS        &kp LBRC  &kp RBRC  &trans
-   &trans  CMD_Z      CMD_X     CMD_C      &none      CMD_V       &kp BSLH   &kp EQUAL  &kp UNDER        &kp LBKT  &kp RBKT  &trans
+   &&none  &kp EXCL   &kp AT    &kp HASH   &kp DLLR   &kp PRCNT   &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &none 
+   &&none  &kp COLON  &kp SEMI  &kp TILDE  &kp GRAVE  &none       &kp PIPE   &kp PLUS   &kp MINUS        &kp LBRC  &kp RBRC  &none 
+   &&none  CMD_Z      CMD_X     CMD_C      &none      CMD_V       &kp BSLH   &kp EQUAL  &kp UNDER        &kp LBKT  &kp RBKT  &none 
                                 &trans     &trans     &trans      &trans     &trans     &trans
                         >;
                 };
@@ -98,20 +100,55 @@
 // -------------------------------------      -------------------------------------
 // |     |  1  |  2  |  3  |  4  |  5  |      |  6  |  7  |  8  |  9  |  0  |     |
 // -------------------------------------      -------------------------------------
-// |     |LSFT |LCTL |LALT |LGUI |     |      |LEFT |DOWN | UP  |RIGHT| APP |     |
+// |     |     |     |     |     |     |      |     |     |     |     |     |     |
 // -------------------------------------      -------------------------------------
-// |     |     |     |     |     |     |      |HOME |PGDN |PGUP | END |     |     |
+// |     |     |     |     |     |     |      |     |     |     |     |     |     |
 // -------------------------------------      -------------------------------------
 //                   |     |     |     |      |     |     |     |
 //                   -------------------      -------------------
                         bindings = <
-   &trans  &kp N1    &kp N2    &kp N3     &kp N4     &kp N5     &kp N6    &kp N7     &kp N8     &kp N9     &kp N0     &trans
-   &trans  &kp LSFT  &kp LCTL  &kp LALT   &kp LGUI   &trans     &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &kp K_APP  &trans
-   &trans  &trans    &trans    &trans     &trans     &trans     &kt HOME  &kp PG_DN  &kp PG_UP  &kp END    &trans     &trans
-                     	         &trans     &trans     &trans     &trans    &trans     &trans
+   &none  &kp N1  &kp N2    &kp N3   &kp N4    &kp N5    &kp N6    &kp N7     &kp N8   &kp N9   &kp N0    &none
+   &none  &kp F1  &kp F2    &kp F3   &kp F4    &kp F5    &kp F6    &kp F7     &kp F8   &kp F9   &kp F10   &none
+   &none  &none   &none     &none    &none     &none     &none     &none      &none    &none    &none     &none
+                     	      &trans   &trans    &tran     &trans    &trans     &trans
                         >;
                 };
 
+                nav_layer {
+// -------------------------------------      -------------------------------------
+// |     |     |     |     |     |     |      |HOME |PGDN |PGUP | END |     |     |
+// -------------------------------------      -------------------------------------
+// |     |     |LCTL |LALT |LGUI |     |      |LEFT |DOWN | UP  |RIGHT| APP |     |
+// -------------------------------------      -------------------------------------
+// |     |     |     |     |     |     |      |     |     |     |     |     |     |
+// -------------------------------------      -------------------------------------
+//                   |     |     |     |      |     |     |     |
+//                   -------------------      -------------------
+                        bindings = <
+   &none  &none   &none     &none      &none      &none     &kt HOME  &kp PG_DN  &kp PG_UP  &kp END    &trans     &none
+   &none  &none   &kp LCTL  &kp LALT   &kp LGUI   &none     &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &kp K_APP  &none
+   &none  &none   &none     &none      &none      &none     &none     &none      &none      &none      &none      &none
+                   	        &trans     &trans     &trans    &trans    &trans     &trans
+                        >;
+                };
+                
+                mse_layer {
+// -------------------------------------      -------------------------------------
+// |     |     |     |     |     |     |      |     |     |     |     |     |     |
+// -------------------------------------      -------------------------------------
+// |     |     |     |     |     |     |      |     |     |     |     |     |     |
+// -------------------------------------      -------------------------------------
+// |     |     |     |     |     |     |      |     |     |     |     |     |     |
+// -------------------------------------      -------------------------------------
+//                   |     |     |     |      |     |     |     |
+//                   -------------------      -------------------
+                        bindings = <
+   &none  &none   &none     &none      &none      &none     &none     &none      &none      &none      &none      &none
+   &none  &none   &none     &none      &none      &none     &none     &none      &none      &none      &none      &none
+   &none  &none   &none     &none      &none      &none     &none     &none      &none      &none      &none      &none
+                   	        &trans     &trans     &trans    &trans    &trans     &trans
+                        >;
+                };
 
                 adjust_layer {
 // --------------------------------------      -------------------------------------
@@ -119,7 +156,7 @@
 // --------------------------------------      -------------------------------------
 // |      |     |     |     |     |     |      |     |     |     |     |     |     |
 // --------------------------------------      -------------------------------------
-// |      |  F1 |  F2 |  F3 |  F4 |  F5 |      |  F6 |  F7 |  F8 |  F9 | F10 |     |
+// |      |     |     |     |     |     |      |     |     |     |     |     |     |
 // --------------------------------------      -------------------------------------
 //                    |     |     |     |      |     |     |     |
 //                    -------------------      -------------------
