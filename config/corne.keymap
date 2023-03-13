@@ -107,19 +107,19 @@
 
                 num_layer {
 // -------------------------------------      -------------------------------------
-// |     |  F1 |  F2 |  F3 |  F4 |  F5 |      |     |  7  |  8  |  9  |     |     |
+// |     |     |     |     |     |     |      |     |  7  |  8  |  9  |     |     |
 // -------------------------------------      -------------------------------------
-// |     |  F6 |  F7 |  F8 |  F9 | F10 |      |     |  4  |  5  |  6  |     |     |
+// |     |     |     |     |     |     |      |     |  4  |  5  |  6  |     |     |
 // -------------------------------------      -------------------------------------
-// |     |  F11 |F12 |     |     |     |      |  0  |  1  |  2  |  3  |     |     |
+// |     |     |     |     |     |     |      |  0  |  1  |  2  |  3  |     |     |
 // -------------------------------------      -------------------------------------
 //                   |     |     |     |      |     |     |     |
 //                   -------------------      -------------------
                         bindings = <
-   XXXXX  &kp F1   &kp F2   &kp F3   &kp F4  &kp F5    XXXXX   &kp N7   &kp N8   &kp N9   XXXXX  XXXXX 
-   XXXXX  &kp F6   &kp F7   &kp F8   &kp F9  &kp F10   XXXXX   &kp N4   &kp N5   &kp N6   XXXXX  XXXXX 
-   XXXXX  &kp F11  &kp F12  XXXXX    XXXXX   XXXXX     &kp N0  &kp N1   &kp N2   &kp N3   XXXXX  XXXXX 
-                     	      _____    _____   _____     _____   _____    _____ 
+   XXXXX  XXXXX  XXXXX  XXXXX  XXXXX  XXXXX     XXXXX   &kp N7   &kp N8   &kp N9   XXXXX  XXXXX 
+   XXXXX  XXXXX  XXXXX  XXXXX  XXXXX  XXXXX     XXXXX   &kp N4   &kp N5   &kp N6   XXXXX  XXXXX 
+   XXXXX  XXXXX  XXXXX  XXXXX  XXXXX  XXXXX     &kp N0  &kp N1   &kp N2   &kp N3   XXXXX  XXXXX 
+                     	  _____  _____  _____     _____   _____    _____ 
                         >;
                 };
 
@@ -160,19 +160,19 @@
                 };
 
                 adjust_layer {
-// --------------------------------------      -------------------------------------
-// |      |     |     |     |     |     |      |     |     |     |     |     |     |
-// --------------------------------------      -------------------------------------
-// |      |     |     |     |     |     |      |     |     |     |     |     |     |
-// --------------------------------------      -------------------------------------
-// |      |     |     |     |     |     |      |     |     |     |     |     |     |
-// --------------------------------------      -------------------------------------
-//                    |     |     |     |      |     |     |     |
-//                    -------------------      -------------------
+// -------------------------------------      -------------------------------------
+// |     |     |     |     |     |     |      |     |     |     |     |     |     |
+// -------------------------------------      -------------------------------------
+// |     |  F1 |  F2 |  F3 |  F4 |  F5 |      |  F6 |  F7 |  F8 |  F9 | F10 |     |
+// -------------------------------------      -------------------------------------
+// |     |     |     |SCNST|     |     |      |     |     |     |     |     |     |
+// -------------------------------------      -------------------------------------
+//                   |     |     |     |      |     |     |     |
+//                   -------------------      -------------------
                     bindings = <
-   XXXXX  &bootloader   XXXXX   XXXXX   XXXXX   XXXXX     &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3 XXXXX 
-   XXXXX  XXXXX         XXXXX   XXXXX   XXXXX   XXXXX     XXXXX       XXXXX         XXXXX         XXXXX         XXXXX        XXXXX 
-   XXXXX  XXXXX         XXXXX   SCNSHT  XXXXX   XXXXX     XXXXX       XXXXX         XXXXX         XXXXX         XXXXX        XXXXX 
+   XXXXX  &bootloader  XXXXX   XXXXX   XXXXX   XXXXX     &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3 XXXXX 
+   XXXXX  &kp F1       &kp F2  &kp F3  &kp F4  &kp F5    &kp F6      &kp F7        &kp F8        &kp F9        &kp F10      XXXXX 
+   XXXXX  XXXXX        XXXXX   SCNSHT  XXXXX   XXXXX     XXXXX       XXXXX         XXXXX         XXXXX         XXXXX        XXXXX 
                    	            _____   _____   _____     _____       _____         _____
                     >;
                 };
