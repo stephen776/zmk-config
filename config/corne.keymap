@@ -134,10 +134,10 @@
 //                   |     |     |     |      |     |     |     |
 //                   -------------------      -------------------
                         bindings = <
-   XXXXX  _____     _____     _____      _____      _____     &kp PG_UP  &kp HOME  &kp UP    &kp END    _____     XXXXX 
-   XXXXX  &kp LSFT  &kp LCTL  &kp LALT   &kp LGUI   _____     &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &kp K_APP XXXXX 
-   XXXXX  _____     _____     _____      _____      _____     _____      _____      _____    _____      _____     XXXXX 
-                   	          _____      _____      _____     _____      _____      _____ 
+   XXXXX  _____               _____              _____               _____                _____     &kp PG_UP  &kp HOME  &kp UP    &kp END    _____     XXXXX 
+   XXXXX  &lh_pht LSFT COLON  &lh_pht LCTL SEMI  &lh_pht LALT TILDE  &lh_pht LGUI GRAVE   _____     &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &kp K_APP XXXXX 
+   XXXXX  _____               _____              _____               _____                _____     _____      _____      _____    _____      _____     XXXXX 
+                   	                             _____               _____                _____     _____      _____      _____ 
                         >;
                 };
                 
