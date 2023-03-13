@@ -136,8 +136,8 @@
                         bindings = <
    XXXXX  _____     _____     _____      _____      _____     &kp PG_UP  &kp HOME  &kp UP    &kp END    _____     XXXXX 
    XXXXX  &kp LSFT  &kp LCTL  &kp LALT   &kp LGUI   _____     &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &kp K_APP XXXXX 
-   XXXXX  _____     _____     _____      _____      _____     _____      ____      _____     _____      _____     XXXXX 
-                   	          _____      _____      _____     _____      ____      _____ 
+   XXXXX  _____     _____     _____      _____      _____     _____      _____      _____    _____      _____     XXXXX 
+                   	          _____      _____      _____     _____      _____      _____ 
                         >;
                 };
                 
