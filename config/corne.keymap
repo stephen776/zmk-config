@@ -77,7 +77,7 @@
 // --------------------------------------     ---------------------------------------
 // |      |  z  |  x  |  c  |  d  |  v  |     |  k  |  h   |  ,  |  .  |  /  |      |
 // --------------------------------------     ---------------------------------------
-//                    | ESC | RET | TAB |     | BSPC| SPC  | DET |
+//                    | ESC | RET | TAB |     | BSPC| SPC  | DEL |
 //                    -------------------     --------------------
                         bindings = <
    XXXXX  &kp Q   &kp W           &kp F           &kp P           &kp B          &kp J          &kp L            &kp U            &kp Y            &kp SQT   XXXXX 
@@ -107,37 +107,37 @@
 
                 num_layer {
 // -------------------------------------      -------------------------------------
-// |     |  1  |  2  |  3  |  4  |  5  |      |  6  |  7  |  8  |  9  |  0  |     |
+// |     |  F1 |  F2 |  F3 |  F4 |  F5 |      |     |  7  |  8  |  9  |     |     |
 // -------------------------------------      -------------------------------------
-// |     |  F1 |  F2 |  F3 |  F4 |  F5 |      |  F6 |  F7 |  F8 |  F9 | F10 |     |
+// |     |  F6 |  F7 |  F8 |  F9 | F10 |      |     |  4  |  5  |  6  |     |     |
 // -------------------------------------      -------------------------------------
-// |     |     |     |     |     |     |      |     |     |     |     |     |     |
+// |     |  F11 |F12 |     |     |     |      |  0  |  1  |  2  |  3  |     |     |
 // -------------------------------------      -------------------------------------
 //                   |     |     |     |      |     |     |     |
 //                   -------------------      -------------------
                         bindings = <
-   XXXXX  &kp N1  &kp N2    &kp N3   &kp N4    &kp N5    &kp N6    &kp N7     &kp N8   &kp N9   &kp N0   XXXXX 
-   XXXXX  &kp F1  &kp F2    &kp F3   &kp F4    &kp F5    &kp F6    &kp F7     &kp F8   &kp F9   &kp F10  XXXXX 
-   XXXXX  XXXXX   XXXXX     XXXXX    XXXXX     XXXXX     XXXXX     XXXXX      XXXXX    XXXXX    XXXXX    XXXXX 
-                     	      _____    _____     _____     _____     _____      _____ 
+   XXXXX  &kp F1   &kp F2   &kp F3   &kp F4  &kp F5    XXXXX   &kp N7   &kp N8   &kp N9   XXXXX  XXXXX 
+   XXXXX  &kp F6   &kp F7   &kp F8   &kp F9  &kp F10   XXXXX   &kp N4   &kp N5   &kp N6   XXXXX  XXXXX 
+   XXXXX  &kp F11  &kp F12  XXXXX    XXXXX   XXXXX     &kp N0  &kp N1   &kp N2   &kp N3   XXXXX  XXXXX 
+                     	      _____    _____   _____     _____   _____    _____ 
                         >;
                 };
 
                 nav_layer {
 // -------------------------------------      -------------------------------------
-// |     |     |     |     |     |     |      |HOME |PGDN |PGUP | END |     |     |
+// |     |     |     |     |     |     |      |PGUP |HOME | UP | END |     |     |
 // -------------------------------------      -------------------------------------
-// |     |     |LCTL |LALT |LGUI |     |      |LEFT |DOWN | UP  |RIGHT| APP |     |
+// |     |     |LCTL |LALT |LGUI |     |      |PGDN |LEFT |DOWN |RIGHT| APP |     |
 // -------------------------------------      -------------------------------------
 // |     |     |     |     |     |     |      |     |     |     |     |     |     |
 // -------------------------------------      -------------------------------------
 //                   |     |     |     |      |     |     |     |
 //                   -------------------      -------------------
                         bindings = <
-   XXXXX  _____   _____     _____      _____      _____     _____      &kp HOME  &kp UP    &kp END    _____     XXXXX 
-   XXXXX  _____   &kp LCTL  &kp LALT   &kp LGUI   _____     &kp PG_UP  &kp LEFT  &kp DOWN  &kp RIGHT  &kp K_APP XXXXX 
-   XXXXX  _____   _____     _____      _____      _____     &kp PG_DN  _____      _____    _____      _____     XXXXX 
-                   	        _____      _____      _____     _____   _____      _____
+   XXXXX  _____     _____     _____      _____      _____     &kp PG_UP  &kp HOME  &kp UP    &kp END    _____     XXXXX 
+   XXXXX  &kp LSFT  &kp LCTL  &kp LALT   &kp LGUI   _____     &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &kp K_APP XXXXX 
+   XXXXX  _____     _____     _____      _____      _____     _____      ____      _____     _____      _____     XXXXX 
+                   	          _____      _____      _____     _____      ____      _____ 
                         >;
                 };
                 
