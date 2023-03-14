@@ -125,7 +125,7 @@
 
                 nav_layer {
 // -------------------------------------      -------------------------------------
-// |     |     |     |     |     |     |      |PGUP |HOME | UP | END |     |     |
+// |     |     |     |     |SCRN |     |      |PGUP |HOME | UP  | END |     |     |
 // -------------------------------------      -------------------------------------
 // |     |     |LCTL |LALT |LGUI |     |      |PGDN |LEFT |DOWN |RIGHT| APP |     |
 // -------------------------------------      -------------------------------------
@@ -134,10 +134,10 @@
 //                   |     |     |     |      |     |     |     |
 //                   -------------------      -------------------
                         bindings = <
-   XXXXX  _____               _____              _____               _____                _____     &kp PG_UP  &kp HOME  &kp UP    &kp END    _____     XXXXX 
-   XXXXX  &lh_pht LSFT COLON  &lh_pht LCTL SEMI  &lh_pht LALT TILDE  &lh_pht LGUI GRAVE   _____     &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &kp K_APP XXXXX 
-   XXXXX  _____               _____              _____               _____                _____     _____      _____      _____    _____      _____     XXXXX 
-                   	                             _____               _____                _____     _____      _____      _____ 
+   XXXXX  _____      _____     _____      SCNSHT     _____     &kp PG_UP  &kp HOME  &kp UP    &kp END    _____     XXXXX 
+   XXXXX  &kp LSFT   &kp LCTL  &kp LALT   &kp LGUI   _____     &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &kp K_APP XXXXX 
+   XXXXX  _____      _____     _____      _____      _____     _____      _____      _____    _____      _____     XXXXX 
+                   	           _____      _____      _____     _____      _____      _____ 
                         >;
                 };
                 
@@ -161,19 +161,19 @@
 
                 adjust_layer {
 // -------------------------------------      -------------------------------------
-// |     |     |     |     |     |     |      |     |     |     |     |     |     |
+// |     |BOOT |BTCLR|BT 1 |BT 2 |BT 3 |      | F12 |  F7 |  F8 |  F9 |     |     |
 // -------------------------------------      -------------------------------------
-// |     |  F1 |  F2 |  F3 |  F4 |  F5 |      |  F6 |  F7 |  F8 |  F9 | F10 |     |
+// |     |     |     |     |     |     |      | F11 |  F4 |  F5 |  F6 |     |     |
 // -------------------------------------      -------------------------------------
-// |     |     |     |SCNST|     |     |      |     |     |     |     |     |     |
+// |     |     |     |     |     |     |      | F10 |  F1 |  F2 |  F3 |     |     |
 // -------------------------------------      -------------------------------------
 //                   |     |     |     |      |     |     |     |
 //                   -------------------      -------------------
                     bindings = <
-   XXXXX  &bootloader  XXXXX   XXXXX   XXXXX   XXXXX     &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3 XXXXX 
-   XXXXX  &kp F1       &kp F2  &kp F3  &kp F4  &kp F5    &kp F6      &kp F7        &kp F8        &kp F9        &kp F10      XXXXX 
-   XXXXX  XXXXX        XXXXX   SCNSHT  XXXXX   XXXXX     XXXXX       XXXXX         XXXXX         XXXXX         XXXXX        XXXXX 
-                   	            _____   _____   _____     _____       _____         _____
+   XXXXX  &bootloader  &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &kp F12   &kp F7   &kp F8  &kp F9  XXXXX   XXXXX 
+   XXXXX  XXXXX        XXXXX       XXXXX         XXXXX         XXXXX         &kp F11   &kp F4   &kp F5  &kp F3  XXXXX   XXXXX 
+   XXXXX  XXXXX        XXXXX       XXXXX         XXXXX         XXXXX         &kp F10   &kp F1   &kp F2  &kp F3  XXXXX   XXXXX 
+                   	               _____         _____         _____         _____     _____    _____
                     >;
                 };
 
