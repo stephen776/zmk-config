@@ -98,10 +98,10 @@
 //                    |     |     |     |     |     |     |     |
 //                    -------------------     -------------------
                         bindings = <
-   XXXXX  &kp EXCL   &kp AT    &kp HASH   &kp DLLR   &kp PRCNT   &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  XXXXX 
+   XXXXX  &kp EXCL   &kp AT     &kp HASH   &kp DLLR   &kp PRCNT   &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  XXXXX 
    XXXXX  &kp COLON  &kp SEMI  &kp TILDE  &kp GRAVE  XXXXX       &kp PIPE   &kp PLUS   &kp MINUS        &kp LBRC  &kp RBRC  XXXXX 
-   XXXXX  CMD_Z      CMD_X     CMD_C      XXXXX      CMD_V       &kp BSLH   &kp EQUAL  &kp UNDER        &kp LBKT  &kp RBKT  XXXXX 
-                               _____      _____      _____       _____      _____      _____
+   XXXXX  CMD_Z      CMD_X      CMD_C      XXXXX      CMD_V       &kp BSLH   &kp EQUAL  &kp UNDER        &kp LBKT  &kp RBKT  XXXXX 
+                                _____      _____      _____       _____      _____      _____
                         >;
                 };
 
@@ -109,17 +109,17 @@
 // -------------------------------------      -------------------------------------
 // |     |  !  |  @  |  #  |  $  |  %  |      |  +  |  7  |  8  |  9  |  *  |     |
 // -------------------------------------      -------------------------------------
-// |     |     |     |  {  |  (  |  [  |      |  -  |  4  |  5  |  6  |  =  |     |
+// |     |  :  |  ;  |  {  |  (  |  [  |      |  -  |  4  |  5  |  6  |  =  |     |
 // -------------------------------------      -------------------------------------
-// |     |  ^  |  &  |  }  |  )  |  ]  |      |  0  |  1  |  2  |  3  |     |     |
+// |     |  ^  |  &  |  }  |  )  |  ]  |      |  0  |  1  |  2  |  3  |  |  |     |
 // -------------------------------------      -------------------------------------
 //                   |     |     |     |      |     |     |     |
 //                   -------------------      -------------------
                         bindings = <
-   XXXXX  &kp EXCL  &kp AT    &kp HASH  &kp DLLR  &kp PRCNT    &kp PLUS   &kp N7   &kp N8   &kp N9   &kp KP_MULTIPLY  XXXXX 
-   XXXXX  XXXXX     XXXXX     &kp LBRC  &kp LPAR  &kp LBKT     &kp MINUS  &kp N4   &kp N5   &kp N6   &kp EQUAL        XXXXX 
-   XXXXX  &kp CARET &kp AMPS  &kp RBRC  &kp RPAR  &kp RBKT     &kp N0     &kp N1   &kp N2   &kp N3   XXXXX            XXXXX 
-                     	        _____     _____     _____        _____      _____    _____ 
+   XXXXX  &kp EXCL   &kp AT    &kp HASH  &kp DLLR  &kp PRCNT    &kp PLUS   &kp N7   &kp N8   &kp N9   &kp KP_MULTIPLY  XXXXX 
+   XXXXX  &kp COLON  &kp SEMI  &kp LBRC  &kp LPAR  &kp LBKT     &kp MINUS  &kp N4   &kp N5   &kp N6   &kp EQUAL        XXXXX 
+   XXXXX  &kp CARET  &kp AMPS  &kp RBRC  &kp RPAR  &kp RBKT     &kp N0     &kp N1   &kp N2   &kp N3   &kp PIPE         XXXXX 
+                     	         _____     _____     _____        _____      _____    _____ 
                         >;
                 };
 
@@ -127,7 +127,7 @@
 // -------------------------------------      -------------------------------------
 // |     |     |     |     |SCRN |     |      |PGUP |HOME | UP  | END |     |     |
 // -------------------------------------      -------------------------------------
-// |     |     |LCTL |LALT |LGUI |     |      |PGDN |LEFT |DOWN |RIGHT| APP |     |
+// |     |LSHFT|LCTL |LALT |LGUI |     |      |PGDN |LEFT |DOWN |RIGHT| APP |     |
 // -------------------------------------      -------------------------------------
 // |     |     |     |     |     |     |      |     |     |     |     |     |     |
 // -------------------------------------      -------------------------------------
@@ -143,13 +143,13 @@
                 
                 mse_layer {
 // -------------------------------------      -------------------------------------
-// |     |     |     |     |     |     |      |     |     |     |     |     |     |
+// |     |     |     |     |     |     |      |     |MW_D |MS_U |MW_U |     |     |
+// -------------------------------------      -------------------------------------
+// |     |     |     |     |     |     |      |     |MS_L |MS_D |MS_R |     |     |
 // -------------------------------------      -------------------------------------
 // |     |     |     |     |     |     |      |     |     |     |     |     |     |
 // -------------------------------------      -------------------------------------
-// |     |     |     |     |     |     |      |     |     |     |     |     |     |
-// -------------------------------------      -------------------------------------
-//                   |     |     |     |      |     |     |     |
+//                   |     |     |     |      |     |MBTN1|MBTN2|
 //                   -------------------      -------------------
                         bindings = <
    XXXXX  XXXXX  XXXXX  XXXXX  XXXXX  XXXXX     XXXXX  U_WH_D U_MS_U  U_WH_U  XXXXX  XXXXX 
