@@ -56,6 +56,30 @@
             hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38 39 40 41>;    // <---[[left-hand keys]]
             hold-trigger-on-release;            // requires PR #1423
           }; 
+
+          td_brc: tap_dance_brc {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_BRC";
+            #binding-cells = <0>;
+            tapping-term-ms = <180>;
+            bindings = <&kp LBRC>, <&kp RBRC>;
+          };
+
+          td_par: tap_dance_par {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_PAR";
+            #binding-cells = <0>;
+            tapping-term-ms = <180>;
+            bindings = <&kp LPAR>, <&kp RPAR>;
+          };
+
+          td_bkt: tap_dance_bkt {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_BKT";
+            #binding-cells = <0>;
+            tapping-term-ms = <180>;
+            bindings = <&kp LBKT>, <&kp RBKT>;
+          };
         };
 
         keymap {
@@ -91,7 +115,7 @@
 //                    -------------------     -------------------
                         bindings = <
    XXXXX  &kp EXCL   &kp AT    &kp HASH  &kp DLLR   &kp PRCNT    XXXXX     XXXXX     XXXXX      XXXXX      XXXXX      XXXXX 
-   XXXXX  &kp COLON  &kp SEMI  &kp LBRC  &kp LPAR   &kp LBKT     XXXXX     &kp LGUI  &kp LALT   &kp LCTL   &kp LSFT   XXXXX 
+   XXXXX  &kp COLON  &kp SEMI  &td_brc   &td_par    &td_bkt      XXXXX     &kp LGUI  &kp LALT   &kp LCTL   &kp LSFT   XXXXX 
    XXXXX  &kp CARET  &kp AMPS  &kp RBRC  &kp RPAR   &kp RBKT     &kp BSLH  &kp PIPE  &kp UNDER  &kp TILDE  &kp GRAVE  XXXXX 
                                _____     _____      _____        _____     _____     _____
                         >;

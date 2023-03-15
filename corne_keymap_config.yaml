@@ -138,8 +138,8 @@ parse_config:
     PLUS: +
     QUES: '?'
     QUESTION: '?'
-    QUOT: ''''
-    QUOTE: ''''
+    QUOT: "'"
+    QUOTE: "'"
     RABK: '>'
     RBRC: ']'
     RCBR: '}'
@@ -152,6 +152,7 @@ parse_config:
     SEMICOLON: ;
     SLASH: /
     SLSH: /
+    SQT: "'"
     TILD: '~'
     TILDE: '~'
     TRANSPARENT: ''
