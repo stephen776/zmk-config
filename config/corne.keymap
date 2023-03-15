@@ -90,10 +90,10 @@
 //                    |     |     |     |     |     |     |     |
 //                    -------------------     -------------------
                         bindings = <
-   XXXXX  &kp EXCL   &kp AT    &kp HASH  &kp DLLR   &kp PRCNT    XXXXX     XXXXX     XXXXX     XXXXX      XXXXX      XXXXX 
-   XXXXX  &kp COLON  &kp SEMI  &kp LBRC  &kp LPAR   &kp LBKT     XXXXX     &kp LGUI  &kp LALT  &kp LCTL   &kp LSFT   XXXXX 
-   XXXXX  &kp CARET  &kp AMPS  &kp RBRC  &kp RPAR   &kp RBKT     &kp BSLH  &kp PIPE  &kp UNDER &kp TILDE  &kp GRAVE  XXXXX 
-                               _____     _____      _____        _____     _____      _____
+   XXXXX  &kp EXCL   &kp AT    &kp HASH  &kp DLLR   &kp PRCNT    XXXXX     XXXXX     XXXXX      XXXXX      XXXXX      XXXXX 
+   XXXXX  &kp COLON  &kp SEMI  &kp LBRC  &kp LPAR   &kp LBKT     XXXXX     &kp LGUI  &kp LALT   &kp LCTL   &kp LSFT   XXXXX 
+   XXXXX  &kp CARET  &kp AMPS  &kp RBRC  &kp RPAR   &kp RBKT     &kp BSLH  &kp PIPE  &kp UNDER  &kp TILDE  &kp GRAVE  XXXXX 
+                               _____     _____      _____        _____     _____     _____
                         >;
                 };
 
@@ -108,10 +108,10 @@
 //                   |     |     |     |      |     |     |     |
 //                   -------------------      -------------------
                         bindings = <
-   XXXXX  XXXXX    XXXXX     XXXXX     XXXXX     XXXXX    &kp PLUS   &kp N7  &kp N8  &kp N9  &kp KP_MULTIPLY XXXXX 
-   XXXXX  &kp LSFT &kp LCTL  &kp LALT  &kp LGUI  XXXXX    &kp MINUS  &kp N4  &kp N5  &kp N6  &kp EQUAL       XXXXX 
-   XXXXX  CMD_Z    CMD_X     CMD_C     XXXXX     CMD_V    &kp N0     &kp N1  &kp N2  &kp N3  &kp FSLH        XXXXX 
-                     	       _____     _____     _____    _____   _____   _____ 
+   XXXXX  XXXXX    XXXXX     XXXXX     XXXXX     XXXXX    &kp PLUS   &kp N7  &kp N8  &kp N9  &kp KP_MULTIPLY  XXXXX 
+   XXXXX  &kp LSFT &kp LCTL  &kp LALT  &kp LGUI  XXXXX    &kp MINUS  &kp N4  &kp N5  &kp N6  &kp EQUAL        XXXXX 
+   XXXXX  CMD_Z    CMD_X     CMD_C     XXXXX     CMD_V    &kp N0     &kp N1  &kp N2  &kp N3  &kp FSLH         XXXXX 
+                     	       _____     _____     _____    _____      _____   _____ 
                         >;
                 };
 
@@ -126,10 +126,10 @@
 //                   |     |     |     |      |     |     |     |
 //                   -------------------      -------------------
                         bindings = <
-   XXXXX  _____      _____     _____      SCNSHT     _____     &kp PG_UP  &kp HOME  &kp UP    &kp END    _____     XXXXX 
-   XXXXX  &kp LSFT   &kp LCTL  &kp LALT   &kp LGUI   _____     &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &kp K_APP XXXXX 
-   XXXXX  _____      _____     _____      _____      _____     _____      _____      _____    _____      _____     XXXXX 
-                   	           _____      _____      _____     _____      _____      _____ 
+   XXXXX  _____      _____     _____      SCNSHT    _____     &kp PG_UP  &kp HOME  &kp UP    &kp END    _____      XXXXX 
+   XXXXX  &kp LSFT   &kp LCTL  &kp LALT   &kp LGUI  _____     &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &kp K_APP  XXXXX 
+   XXXXX  _____      _____     _____      _____     _____     _____      _____      _____    _____      _____      XXXXX 
+                   	           _____      _____     _____     _____      _____      _____ 
                         >;
                 };
                 
