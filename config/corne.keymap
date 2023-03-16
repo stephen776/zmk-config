@@ -109,10 +109,10 @@
 //                    | ESC | RET | TAB |     | BSPC| SPC  | DEL |
 //                    -------------------     --------------------
                         bindings = <
-   XXXXX  &kp Q   &kp W           &kp F           &kp P           &kp B          &kp J          &kp L            &kp U            &kp Y            &kp SQT   XXXXX 
-   XXXXX  &kp A   &lh_pht LCTL R  &lh_pht LALT S  &lh_pht LGUI T  &kp G          &kp M          &rh_pht RGUI N   &rh_pht RALT E   &rh_pht RCTRL I  &kp  O    XXXXX 
-   XXXXX  &kp Z   &kp X           &kp C           &kp D           &kp V          &kp K          &kp H            &kp COMMA        &kp DOT          &kp FSLH  XXXXX 
-                                  &lt MOUSE ESC   &mt LSFT RET    &lt NUM TAB    &lt SYM BSPC   &lt NAV SPACE    &lt FUN DEL
+   XXXXX  &kp Q           &kp W           &kp F           &kp P           &kp B          &kp J         &kp L           &kp U            &kp Y            &kp SQT         XXXXX 
+   XXXXX  &lh_pht LSFT A  &lh_pht LCTL R  &lh_pht LALT S  &lh_pht LGUI T  &kp G          &kp M         &rh_pht RGUI N  &rh_pht RALT E   &rh_pht RCTRL I  &rh_pht RSFT O  XXXXX 
+   XXXXX  &kp Z           &kp X           &kp C           &kp D           &kp V          &kp K         &kp H           &kp COMMA        &kp DOT          &kp FSLH        XXXXX 
+                                          &lt MOUSE ESC   &mt LSFT RET    &lt NUM TAB    &lt SYM BSPC  &lt NAV SPACE   &lt FUN DEL
                         >;
                 };
 
