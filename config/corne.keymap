@@ -130,7 +130,7 @@
    XXXXX  &kp LBRC   &kp AMPS  &kp KP_MULTIPLY  &kp LPAR   &kp RBRC     XXXXX  XXXXX     XXXXX     XXXXX     XXXXX     XXXXX 
    XXXXX  &kp COLON  &kp DLLR  &kp PRCNT        &kp CARET  &kp PLUS     XXXXX  &kp LGUI  &kp LALT  &kp LCTL  &kp LSFT  XXXXX 
    XXXXX  &kp TILDE  &kp EXCL  &kp AT           &kp HASH   &kp PIPE     XXXXX  XXXXX     XXXXX     XXXXX     XXXXX     XXXXX 
-                               &kp LPAR         &kp RPAR   &kb UNDER    _____  _____     _____
+                               &kp LPAR         &kp RPAR   &kp UNDER    _____  _____     _____
                         >;
                 };
 
