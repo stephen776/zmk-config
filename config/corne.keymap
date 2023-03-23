@@ -199,9 +199,9 @@
 //                   |     |     |     |      |     |     |     |
 //                   -------------------      -------------------
                     bindings = <
-   XXXXX  &bootloader  &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &kp F12   &kp F7   &kp F8  &kp F9  &bootloade  XXXXX 
-   XXXXX  XXXXX        XXXXX       XXXXX         XXXXX         XXXXX         &kp F11   &kp F4   &kp F5  &kp F3  XXXXX       XXXXX 
-   XXXXX  XXXXX        XXXXX       XXXXX         XXXXX         XXXXX         &kp F10   &kp F1   &kp F2  &kp F3  XXXXX       XXXXX 
+   XXXXX  &bootloader  &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &kp F12   &kp F7   &kp F8  &kp F9  &bootloader  XXXXX 
+   XXXXX  XXXXX        XXXXX       XXXXX         XXXXX         XXXXX         &kp F11   &kp F4   &kp F5  &kp F3  XXXXX        XXXXX 
+   XXXXX  XXXXX        XXXXX       XXXXX         XXXXX         XXXXX         &kp F10   &kp F1   &kp F2  &kp F3  XXXXX        XXXXX 
                    	               _____         _____         _____         _____     _____    _____
                     >;
                 };
