@@ -129,7 +129,7 @@
                         bindings = <
    XXXXX  &kp LBRC   &kp AMPS  &kp KP_MULTIPLY  &kp LPAR   &kp RBRC     XXXXX  XXXXX     XXXXX     XXXXX     XXXXX     XXXXX 
    XXXXX  &kp COLON  &kp DLLR  &kp PRCNT        &kp CARET  &kb PLUS     XXXXX  &kp LGUI  &kp LALT  &kp LCTL  &kp LSFT  XXXXX 
-   XXXXX  &kp CARET  &kp EXCL  &kp AT           &kp HASH   &kp PIPE     XXXXX  XXXXX     XXXXX     XXXXX     XXXXX     XXXXX 
+   XXXXX  &kp TILDE  &kp EXCL  &kp AT           &kp HASH   &kp PIPE     XXXXX  XXXXX     XXXXX     XXXXX     XXXXX     XXXXX 
                                _____            _____      _____        _____  _____     _____
                         >;
                 };
@@ -147,7 +147,7 @@
                         bindings = <
    XXXXX  &kp LBKT  &kp N7  &kp N8   &kp N9  &kp RBKT     XXXXX  XXXXX     XXXXX     XXXXX     XXXXX     XXXXX 
    XXXXX  &kp SEMI  &kp N4  &kp N5   &kp N6  &kp EQUAL    XXXXX  &kp LGUI  &kp LALT  &kp LCTL  &kp LSFT  XXXXX 
-   XXXXX  &kp CARET &kp N1  &kp N2   &kp N3  &kp BSLH     XXXXX  XXXXX     XXXXX     XXXXX     XXXXX     XXXXX  
+   XXXXX  &kp GRAVE &kp N1  &kp N2   &kp N3  &kp BSLH     XXXXX  XXXXX     XXXXX     XXXXX     XXXXX     XXXXX  
                    	        &kp DOT  &kp N0  &kp MINUS    _____  _____     _____ 
                         >;
                 };
