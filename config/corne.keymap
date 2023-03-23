@@ -157,15 +157,15 @@
 // |     |     |     |     |SCRN |     |      |PGUP |HOME | UP  | END |     |     |
 // -------------------------------------      -------------------------------------
 // |     |LSFT |LCTL |LALT |LGUI |     |      |PGDN |LEFT |DOWN |RIGHT| APP |     |
-// -------------------------------------      -------------------------------------
-// |     |     |     |     |     |     |      |     |     |     |     |     |     |
+/ -------------------------------------      -------------------------------------
+// |     |CMD_Z|CMD_X|CMD_C|     |CMD_V|      |     |     |     |     |     |     |
 // -------------------------------------      -------------------------------------
 //                   |     |     |     |      |     |     |     |
 //                   -------------------      -------------------
                         bindings = <
    XXXXX  _____      _____     _____      SCNSHT    _____     &kp PG_UP  &kp HOME  &kp UP    &kp END    &caps_word  XXXXX 
    XXXXX  &kp LSFT   &kp LCTL  &kp LALT   &kp LGUI  _____     &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &kp K_APP   XXXXX 
-   XXXXX  _____      _____     _____      _____     _____     _____      _____      _____    _____      _____       XXXXX 
+   XXXXX  CMD_Z      CMD_X     CMD_C      XXXXX     CMD_V     _____      _____      _____    _____      _____       XXXXX 
                    	           _____      _____     _____     _____      _____      _____ 
                         >;
                 };
@@ -190,7 +190,7 @@
 
                 fun_layer {
 // -------------------------------------      -------------------------------------
-// |     |BOOT |BTCLR|BT 1 |BT 2 |BT 3 |      | F12 |  F7 |  F8 |  F9 |     |     |
+// |     |BOOT |BTCLR|BT 1 |BT 2 |BT 3 |      | F12 |  F7 |  F8 |  F9 |BOOT |     |
 // -------------------------------------      -------------------------------------
 // |     |     |     |     |     |     |      | F11 |  F4 |  F5 |  F6 |     |     |
 // -------------------------------------      -------------------------------------
@@ -199,9 +199,9 @@
 //                   |     |     |     |      |     |     |     |
 //                   -------------------      -------------------
                     bindings = <
-   XXXXX  &bootloader  &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &kp F12   &kp F7   &kp F8  &kp F9  XXXXX   XXXXX 
-   XXXXX  XXXXX        XXXXX       XXXXX         XXXXX         XXXXX         &kp F11   &kp F4   &kp F5  &kp F3  XXXXX   XXXXX 
-   XXXXX  XXXXX        XXXXX       XXXXX         XXXXX         XXXXX         &kp F10   &kp F1   &kp F2  &kp F3  XXXXX   XXXXX 
+   XXXXX  &bootloader  &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &kp F12   &kp F7   &kp F8  &kp F9  &bootloade  XXXXX 
+   XXXXX  XXXXX        XXXXX       XXXXX         XXXXX         XXXXX         &kp F11   &kp F4   &kp F5  &kp F3  XXXXX       XXXXX 
+   XXXXX  XXXXX        XXXXX       XXXXX         XXXXX         XXXXX         &kp F10   &kp F1   &kp F2  &kp F3  XXXXX       XXXXX 
                    	               _____         _____         _____         _____     _____    _____
                     >;
                 };
