@@ -24,6 +24,7 @@
 #define CMD_X   &kp LG(X)
 #define CMD_Z   &kp LG(Z)
 
+/* global config */
 &caps_word {
     continue-list = <UNDERSCORE MINUS>;
 };
