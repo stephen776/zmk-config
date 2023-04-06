@@ -74,7 +74,7 @@
 #ifdef THREE_THUMBS                              
                                &kp LPAR         &kp RPAR   &kp UNDER    _____  _____     _____
 #else
-                                                &kp RPAR   &kp UNDER    _____  _____  
+                                                &kp LPAR   &kp UNDER    _____  _____  
 #endif
                         >;
                 };
@@ -118,7 +118,7 @@
 #ifdef THREE_THUMBS                              
                    	           _____      _____     _____     _____      _____      _____ 
 #else
-                                         _____     _____      _____      _____ 
+                                          _____     _____      _____      _____ 
 #endif
                         >;
                 };
@@ -162,7 +162,7 @@
 #ifdef THREE_THUMBS                              
                    	           _____      _____     _____     _____      _____      _____ 
 #else
-                                         _____     _____      _____      _____ 
+                                          _____     _____      _____      _____ 
 #endif
                     >;
                 };
