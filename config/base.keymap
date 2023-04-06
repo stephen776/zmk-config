@@ -16,7 +16,6 @@
 #define XXXXX &none
 #define _____ &trans
 
-
 /* macros */
 #define SCNSHT  &kp LC(LS(LA(LG(C))))
 #define CMD_A   &kp LG(A)
@@ -36,133 +35,133 @@
                 compatible = "zmk,keymap";
 
                 default_layer {
-// --------------------------------------     ---------------------------------------
-// |      |  q  |  w  |  f  |  p  |  b  |     |  j  |  l   |  u  |  y  |  '  |      |
-// --------------------------------------     ---------------------------------------
-// |      |  a  |  r  |  s  |  t  |  g  |     |  m  |  n   |  e  |  i  |  o  |      |
-// --------------------------------------     ---------------------------------------
-// |      |  z  |  x  |  c  |  d  |  v  |     |  k  |  h   |  ,  |  .  |  /  |      |
-// --------------------------------------     ---------------------------------------
-//                    | ESC | RET | TAB |     | BSPC| SPC  | DEL |
-//                    -------------------     --------------------
+// -------------------------------     --------------------------------
+// |  q  |  w  |  f  |  p  |  b  |     |  j  |  l   |  u  |  y  |  '  |
+// -------------------------------     --------------------------------
+// |  a  |  r  |  s  |  t  |  g  |     |  m  |  n   |  e  |  i  |  o  |
+// -------------------------------     --------------------------------
+// |  z  |  x  |  c  |  d  |  v  |     |  k  |  h   |  ,  |  .  |  /  |
+// -------------------------------     --------------------------------
+//             | ESC | RET | TAB |     | BSPC| SPC  | DEL |
+//             -------------------     --------------------
                         bindings = <
-   XXXXX  &kp Q           &kp W           &kp F           &kp P           &kp B          &kp J         &kp L           &kp U            &kp Y            &kp SQT         XXXXX 
-   XXXXX  &lh_pht LSFT A  &lh_pht LCTL R  &lh_pht LALT S  &lh_pht LGUI T  &kp G          &kp M         &rh_pht RGUI N  &rh_pht RALT E   &rh_pht RCTRL I  &rh_pht RSFT O  XXXXX 
-   XXXXX  &kp Z           &kp X           &kp C           &kp D           &kp V          &kp K         &kp H           &kp COMMA        &kp DOT          &kp FSLH        XXXXX 
+   &kp Q           &kp W           &kp F           &kp P           &kp B          &kp J         &kp L           &kp U            &kp Y            &kp SQT        
+   &lh_pht LSFT A  &lh_pht LCTL R  &lh_pht LALT S  &lh_pht LGUI T  &kp G          &kp M         &rh_pht RGUI N  &rh_pht RALT E   &rh_pht RCTRL I  &rh_pht RSFT O 
+   &kp Z           &kp X           &kp C           &kp D           &kp V          &kp K         &kp H           &kp COMMA        &kp DOT          &kp FSLH       
 #ifdef THREE_THUMBS                              
-                                          &kp ESC         &lt NAV RET     &lt MOUSE TAB  &lt SYM BSPC  &lt NUM SPACE   &lt FUN DEL
+                                   &kp ESC         &lt NAV RET     &lt MOUSE TAB  &lt SYM BSPC  &lt NUM SPACE   &lt FUN DEL
 #else
-                                                          &lt NAV RET     &lt MOUSE TAB  &lt SYM BSPC  &lt NUM SPACE 
+                                                   &lt NAV RET     &lt MOUSE TAB  &lt SYM BSPC  &lt NUM SPACE 
 #endif
                         >;
                 };
 
                 sym_layer {
-// --------------------------------------     --------------------------------------
-// |      |  {  |  &  |  *  |  (  |  }  |     |     |     |     |     |     |      |
-// --------------------------------------     --------------------------------------
-// |      |  :  |  $  |  %  |  ^  |  +  |     |     |LGUI |LALT |LCTL |LSFT |      |
-// --------------------------------------     --------------------------------------
-// |      |  ~  |  !  |  @  |  #  |  |  |     |     |     |     |     |     |      |
-// --------------------------------------     --------------------------------------
-//                    |  (  |  )  |  _  |     |     |     |     |
-//                    -------------------     -------------------
+// -------------------------------     -------------------------------
+// |  {  |  &  |  *  |  (  |  }  |     |     |     |     |     |     |
+// -------------------------------     -------------------------------
+// |  :  |  $  |  %  |  ^  |  +  |     |     |LGUI |LALT |LCTL |LSFT |
+// -------------------------------     -------------------------------
+// |  ~  |  !  |  @  |  #  |  |  |     |     |     |     |     |     |
+// -------------------------------     -------------------------------
+//             |  (  |  )  |  _  |     |     |     |     |
+//             -------------------     -------------------
                         bindings = <
-   XXXXX  &kp LBRC   &kp AMPS  &kp KP_MULTIPLY  &kp LPAR   &kp RBRC     XXXXX  XXXXX     XXXXX     XXXXX     XXXXX     XXXXX 
-   XXXXX  &kp COLON  &kp DLLR  &kp PRCNT        &kp CARET  &kp PLUS     XXXXX  &kp LGUI  &kp LALT  &kp LCTL  &kp LSFT  XXXXX 
-   XXXXX  &kp TILDE  &kp EXCL  &kp AT           &kp HASH   &kp PIPE     XXXXX  XXXXX     XXXXX     XXXXX     XXXXX     XXXXX 
+   &kp LBRC   &kp AMPS  &kp KP_MULTIPLY  &kp LPAR   &kp RBRC     XXXXX  XXXXX     XXXXX     XXXXX     XXXXX    
+   &kp COLON  &kp DLLR  &kp PRCNT        &kp CARET  &kp PLUS     XXXXX  &kp LGUI  &kp LALT  &kp LCTL  &kp LSFT 
+   &kp TILDE  &kp EXCL  &kp AT           &kp HASH   &kp PIPE     XXXXX  XXXXX     XXXXX     XXXXX     XXXXX    
 #ifdef THREE_THUMBS                              
-                               &kp LPAR         &kp RPAR   &kp UNDER    _____  _____     _____
+                        &kp LPAR         &kp RPAR   &kp UNDER    _____  _____     _____
 #else
-                                                &kp LPAR   &kp UNDER    _____  _____  
+                                         &kp LPAR   &kp UNDER    _____  _____  
 #endif
                         >;
                 };
 
                 num_layer {
-// -------------------------------------      -------------------------------------
-// |     |  [  |  7  |  8  |  9  |  ]  |      |     |     |     |     |     |     | 
-// -------------------------------------      -------------------------------------
-// |     |  ;  |  4  |  5  |  6  |  =  |      |     |LGUI |LALT |LCTL |LSFT |     | 
-// -------------------------------------      -------------------------------------
-// |     |  `  |  1  |  2  |  3  |  \  |      |     |     |     |     |     |     | 
-// -------------------------------------      -------------------------------------
-//                   |  .  |  0  |  -  |      |     |     |     |
-//                   -------------------      -------------------
+// -------------------------------      -------------------------------
+// |  [  |  7  |  8  |  9  |  ]  |      |     |     |     |     |     | 
+// -------------------------------      -------------------------------
+// |  ;  |  4  |  5  |  6  |  =  |      |     |LGUI |LALT |LCTL |LSFT | 
+// -------------------------------      -------------------------------
+// |  `  |  1  |  2  |  3  |  \  |      |     |     |     |     |     | 
+// -------------------------------      -------------------------------
+//             |  .  |  0  |  -  |      |     |     |     |
+//             -------------------      -------------------
                         bindings = <
-   XXXXX  &kp LBKT  &kp N7  &kp N8   &kp N9  &kp RBKT     XXXXX  XXXXX     XXXXX     XXXXX     XXXXX     XXXXX 
-   XXXXX  &kp SEMI  &kp N4  &kp N5   &kp N6  &kp EQUAL    XXXXX  &kp LGUI  &kp LALT  &kp LCTL  &kp LSFT  XXXXX 
-   XXXXX  &kp GRAVE &kp N1  &kp N2   &kp N3  &kp BSLH     XXXXX  XXXXX     XXXXX     XXXXX     XXXXX     XXXXX  
+   &kp LBKT  &kp N7  &kp N8   &kp N9  &kp RBKT     XXXXX  XXXXX     XXXXX     XXXXX     XXXXX    
+   &kp SEMI  &kp N4  &kp N5   &kp N6  &kp EQUAL    XXXXX  &kp LGUI  &kp LALT  &kp LCTL  &kp LSFT 
+   &kp GRAVE &kp N1  &kp N2   &kp N3  &kp BSLH     XXXXX  XXXXX     XXXXX     XXXXX     XXXXX     
 #ifdef THREE_THUMBS                              
-                   	        &kp DOT  &kp N0  &kp MINUS    _____  _____     _____ 
+                   	 &kp DOT  &kp N0  &kp MINUS    _____  _____     _____ 
 #else
-                   	                 &kp N0  &kp MINUS    _____  _____      
+                   	          &kp N0  &kp MINUS    _____  _____      
 #endif
                         >;
                 };
 
                 nav_layer {
-// -------------------------------------      -------------------------------------
-// |     |     |     |     |SCRN |     |      |PGUP |HOME | UP  | END |CAPWD|     |
-// -------------------------------------      -------------------------------------
-// |     |LSFT |LCTL |LALT |LGUI |     |      |PGDN |LEFT |DOWN |RIGHT| APP |     |
-// -------------------------------------      -------------------------------------
-// |     |CMD_Z|CMD_X|CMD_C|     |CMD_V|      |     |     |     |     |     |     |
-// -------------------------------------      -------------------------------------
-//                   |     |     |     |      |     |     |     |
-//                   -------------------      -------------------
+// -------------------------------      -------------------------------
+// |     |     |     |SCRN |     |      |PGUP |HOME | UP  | END |CAPWD|
+// -------------------------------      -------------------------------
+// |LSFT |LCTL |LALT |LGUI |     |      |PGDN |LEFT |DOWN |RIGHT| APP |
+// -------------------------------      -------------------------------
+// |CMD_Z|CMD_X|CMD_C|     |CMD_V|      |     |     |     |     |     |
+// -------------------------------      -------------------------------
+//             |     |     |     |      |     |     |     |
+//             -------------------      -------------------
                         bindings = <
-   XXXXX  _____      _____     _____      SCNSHT    _____     &kp PG_UP  &kp HOME  &kp UP    &kp END    &caps_word  XXXXX 
-   XXXXX  &kp LSFT   &kp LCTL  &kp LALT   &kp LGUI  _____     &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &kp K_APP   XXXXX 
-   XXXXX  CMD_Z      CMD_X     CMD_C      XXXXX     CMD_V     _____      _____      _____    _____      _____       XXXXX 
+   _____      _____     _____      SCNSHT    _____     &kp PG_UP  &kp HOME  &kp UP    &kp END    &caps_word 
+   &kp LSFT   &kp LCTL  &kp LALT   &kp LGUI  _____     &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &kp K_APP  
+   CMD_Z      CMD_X     CMD_C      XXXXX     CMD_V     _____      _____      _____    _____      _____      
 #ifdef THREE_THUMBS                              
-                   	           _____      _____     _____     _____      _____      _____ 
+                   	    _____      _____     _____     _____      _____      _____ 
 #else
-                                          _____     _____      _____      _____ 
+                                   _____     _____     _____      _____ 
 #endif
                         >;
                 };
                 
                 mse_layer {
-// -------------------------------------      -------------------------------------
-// |     |     |     |     |     |     |      |     |MW_D |MS_U |MW_U |     |     |
-// -------------------------------------      -------------------------------------
-// |     |LSFT |LCTL |LALT |LGUI |     |      |     |MS_L |MS_D |MS_R |     |     |
-// -------------------------------------      -------------------------------------
-// |     |CMD_Z|CMD_X|CMD_C|     |CMD_V|      |     |     |     |     |     |     |
-// -------------------------------------      -------------------------------------
-//                   |     |     |     |      |     |MBTN1|MBTN2|
-//                   -------------------      -------------------
+// -------------------------------      -------------------------------
+// |     |     |     |     |     |      |     |MW_D |MS_U |MW_U |     |
+// -------------------------------      -------------------------------
+// |LSFT |LCTL |LALT |LGUI |     |      |     |MS_L |MS_D |MS_R |     |
+// -------------------------------      -------------------------------
+// |CMD_Z|CMD_X|CMD_C|     |CMD_V|      |     |     |     |     |     |
+// -------------------------------      -------------------------------
+//             |     |     |     |      |     |MBTN1|MBTN2|
+//             -------------------      -------------------
                         bindings = <
-   XXXXX  XXXXX     XXXXX     XXXXX     XXXXX     XXXXX     XXXXX  U_WH_D  U_MS_U  U_WH_U  XXXXX  XXXXX 
-   XXXXX  &kp LSFT  &kp LCTL  &kp LALT  &kp LGUI  XXXXX     XXXXX  U_MS_L  U_MS_D  U_MS_R  XXXXX  XXXXX 
-   XXXXX  CMD_Z     CMD_X     CMD_C     XXXXX     CMD_V     XXXXX  XXXXX   XXXXX   XXXXX   XXXXX  XXXXX 
+   XXXXX     XXXXX     XXXXX     XXXXX     XXXXX     XXXXX  U_WH_D  U_MS_U  U_WH_U  XXXXX 
+   &kp LSFT  &kp LCTL  &kp LALT  &kp LGUI  XXXXX     XXXXX  U_MS_L  U_MS_D  U_MS_R  XXXXX 
+   CMD_Z     CMD_X     CMD_C     XXXXX     CMD_V     XXXXX  XXXXX   XXXXX   XXXXX   XXXXX 
 #ifdef THREE_THUMBS                              
-                   	          _____     _____     _____     _____  U_BTN1  U_BTN2
+                 	     _____     _____     _____     _____  U_BTN1  U_BTN2
 #else
-                   	                    _____     _____     _____  U_BTN1  
+                   	             _____     _____     _____  U_BTN1  
 #endif
                         >;
                 };
 
                 fun_layer {
-// -------------------------------------      -------------------------------------
-// |     | F12 |  F7 |  F8 |  F9 |BOOT |      |BOOT | BT1 | BT2 | BT3 |BTCLR|     |
-// -------------------------------------      -------------------------------------
-// |     | F11 |  F4 |  F5 |  F6 |     |      |     |     |     |     |     |     |
-// -------------------------------------      -------------------------------------
-// |     | F10 |  F1 |  F2 |  F3 |     |      |     |     |     |     |     |     |
-// -------------------------------------      -------------------------------------
-//                   |     |     |     |      |     |     |     |
-//                   -------------------      -------------------
+// -------------------------------      -------------------------------
+// | F12 |  F7 |  F8 |  F9 |BOOT |      |BOOT | BT1 | BT2 | BT3 |BTCLR|
+// -------------------------------      -------------------------------
+// | F11 |  F4 |  F5 |  F6 |     |      |     |     |     |     |     |
+// -------------------------------      -------------------------------
+// | F10 |  F1 |  F2 |  F3 |     |      |     |     |     |     |     |
+// -------------------------------      -------------------------------
+//             |     |     |     |      |     |     |     |
+//             -------------------      -------------------
                     bindings = <
-   XXXXX  &kp F12  &kp F7  &kp F8  &kp F9  &bootloader    &bootloader  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_CLR  XXXXX 
-   XXXXX  &kp F11  &kp F4  &kp F5  &kp F3  XXXXX          XXXXX        XXXXX         XXXXX         XXXXX         XXXXX       XXXXX 
-   XXXXX  &kp F10  &kp F1  &kp F2  &kp F3  XXXXX          XXXXX        XXXXX         XXXXX         XXXXX         XXXXX       XXXXX 
+   &kp F12  &kp F7  &kp F8  &kp F9  &bootloader    &bootloader  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_CLR 
+   &kp F11  &kp F4  &kp F5  &kp F3  XXXXX          XXXXX        XXXXX         XXXXX         XXXXX         XXXXX      
+   &kp F10  &kp F1  &kp F2  &kp F3  XXXXX          XXXXX        XXXXX         XXXXX         XXXXX         XXXXX      
 #ifdef THREE_THUMBS                              
-                   	           _____      _____     _____     _____      _____      _____ 
+                   	_____   _____   _____          _____        _____         _____ 
 #else
-                                          _____     _____      _____      _____ 
+                            _____   _____          _____        _____ 
 #endif
                     >;
                 };
