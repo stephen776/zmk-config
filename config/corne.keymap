@@ -10,6 +10,9 @@
     cs-gpios = <&pro_micro 0 GPIO_ACTIVE_HIGH>;
 };
 
+/* source keypos helpers*/
+#include "../keypos_def/keypos_36keys.h"
+
 #define THREE_THUMBS
 
 /* source the main keymap */
