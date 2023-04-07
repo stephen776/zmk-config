@@ -1,1 +1,23 @@
+#define COMBO_TERM 50
 
+#define COMBO(NAME, BINDINGS, KEYPOS, LAYERS) \
+        combo_##NAME { \
+            timeout-ms = <COMBO_TERMTERM>; \
+            bindings = <BINDINGS>; \
+            key-positions = <KEYPOS>; \
+            layers = <LAYERS>; \
+        };
+
+/ {
+    combos {
+        compatible = "zmk,combos";
+
+COMBO(esc,  &kp ESC,  LH0 LH1, DEFAULT)
+COMBO(zero, &kp N0,   LH0 LH1, NUM)
+COMBO(rpar, &kp RPAR, LH0 LH1, SYM)
+
+COMBO(bspc, &kp BSPC, RH0 RH1, DEFAULT NAV)
+COMBO(ms2,  U_BTN2,   RH0 RH1, MOUSE)
+
+    };
+};
