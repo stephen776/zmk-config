@@ -2,7 +2,7 @@
 
 #define COMBO(NAME, BINDINGS, KEYPOS, LAYERS) \
         combo_##NAME { \
-            timeout-ms = <COMBO_TERMTERM>; \
+            timeout-ms = <COMBO_TERM>; \
             bindings = <BINDINGS>; \
             key-positions = <KEYPOS>; \
             layers = <LAYERS>; \
