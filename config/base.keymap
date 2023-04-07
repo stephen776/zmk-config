@@ -11,6 +11,7 @@
 #define FUN     5
 
 #include "behaviors.dtsi"
+#include "combos.dtsi"
 #include "mouse.dtsi"
 
 #define XXXXX &none
