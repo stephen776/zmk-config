@@ -16,7 +16,7 @@ COMBO(esc,  &kp ESC,  LH0 LH1, DEFAULT)
 COMBO(zero, &kp N0,   LH0 LH1, NUM)
 COMBO(rpar, &kp RPAR, LH0 LH1, SYM)
 
-COMBO(bspc, &kp DEL, RH0 RH1, DEFAULT NAV)
+COMBO(del, &kp DEL, RH0 RH1, DEFAULT NAV)
 /* COMBO(mse2, &mkp MB2, RH0 RH1, MOUSE) */
 
     };
