@@ -1,3 +1,11 @@
+/*                              34 KEY MATRIX / LAYOUT MAPPING
+  ╭─────────────────────┬─────────────────────╮
+  │ LT4 LT3 LT2 LT1 LT0 │ RT0 RT1 RT2 RT3 RT4 │
+  │ LM4 LM3 LM2 LM1 LM0 │ RM0 RM1 RM2 RM3 RM4 │
+  │ LB4 LB3 LB2 LB1 LB0 │ RB0 RB1 RB2 RB3 RB4 │
+  ╰───────────╮ LH1 LH0 │ RH0 RH1 ╭───────────╯
+              ╰─────────┴─────────╯             */
+
 #define COMBO_TERM 50
 
 #define COMBO(NAME, BINDINGS, KEYPOS, LAYERS) \
@@ -11,13 +19,17 @@
 / {
     combos {
         compatible = "zmk,combos";
-
+/* left thumb */
 COMBO(esc,  &kp ESC,  LH0 LH1, DEFAULT)
 COMBO(zero, &kp N0,   LH0 LH1, NUM)
 COMBO(rpar, &kp RPAR, LH0 LH1, SYM)
 
+/* right thumb */     
 COMBO(del, &kp DEL, RH0 RH1, DEFAULT NAV)
 /* COMBO(mse2, &mkp MB2, RH0 RH1, MOUSE) */
+
+/* other */
+COMBO(qw_esc, &kp ESC, LH4 LH3, DEFAULT)
 
     };
 };
