@@ -29,7 +29,7 @@ COMBO(del, &kp DEL, RH0 RH1, DEFAULT NAV)
 /* COMBO(mse2, &mkp MB2, RH0 RH1, MOUSE) */
 
 /* other */
-COMBO(qw_esc, &kp ESC, LH4 LH3, DEFAULT)
+COMBO(qw_esc, &kp ESC, LT4 LT3, DEFAULT)
 
     };
 };

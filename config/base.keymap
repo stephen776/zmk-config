@@ -103,7 +103,7 @@
 
                 nav_layer {
 // -------------------------------      -------------------------------
-// |     |     |     |SCRN |     |      |PGUP |HOME | UP  | END |CAPWD|
+// | ESC |     |     |SCRN |CAPWD|      |PGUP |HOME | UP  | END |     |
 // -------------------------------      -------------------------------
 // |LSFT |LCTL |LALT |LGUI |     |      |PGDN |LEFT |DOWN |RIGHT| APP |
 // -------------------------------      -------------------------------
@@ -112,13 +112,13 @@
 //             |     |     |     |      |     |     |     |
 //             -------------------      -------------------
                         bindings = <
-   _____      _____     _____      SCNSHT    _____     &kp PG_UP  &kp HOME  &kp UP    &kp END    &caps_word 
-   &kp LSFT   &kp LCTL  &kp LALT   &kp LGUI  _____     &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &kp K_APP  
-   CMD_Z      CMD_X     CMD_C      XXXXX     CMD_V     _____      _____      _____    _____      _____      
+   &kp ESC      _____     _____    SCNSHT    &caps_word    &kp PG_UP  &kp HOME  &kp UP    &kp END    _____
+   &kp LSFT   &kp LCTL  &kp LALT   &kp LGUI  _____         &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &kp K_APP  
+   CMD_Z      CMD_X     CMD_C      XXXXX     CMD_V         _____      _____      _____    _____      _____      
 #ifdef THREE_THUMBS                              
-                   	    _____      _____     _____     _____      _____      _____ 
+                   	    _____      _____     _____         _____      _____      _____ 
 #else
-                                   _____     _____     _____      _____ 
+                                   _____     _____         _____      &kp DEL 
 #endif
                         >;
                 };
