@@ -46,13 +46,13 @@
 //             | ESC | RET | TAB |     | BSPC| SPC  | DEL |
 //             -------------------     --------------------
                         bindings = <
-   &kp Q           &kp W           &kp F           &kp P           &kp B          &kp J         &kp L           &kp U            &kp Y            &kp SQT        
-   &lh_pht LSFT A  &lh_pht LCTL R  &lh_pht LALT S  &lh_pht LGUI T  &kp G          &kp M         &rh_pht RGUI N  &rh_pht RALT E   &rh_pht RCTRL I  &rh_pht RSFT O 
-   &kp Z           &kp X           &kp C           &kp D           &kp V          &kp K         &kp H           &kp COMMA        &kp DOT          &kp FSLH       
+   &kp Q        &kp W        &kp F        &kp P        &kp B          &kp J  &kp L        &kp U          &kp Y         &kp SQT        
+   &hml LSFT A  &hml LCTL R  &hml LALT S  &hml LGUI T  &kp G          &kp M  &hmr RGUI N  &hmr RALT E    &hmr RCTRL I  &hmr RSFT O 
+   &kp Z        &kp X        &kp C        &kp D        &kp V          &kp K  &kp H        &kp COMMA      &kp DOT       &kp FSLH       
 #ifdef THREE_THUMBS                              
-                                   &kp ESC         &lt NAV RET     &lt MOUSE TAB  &lt SYM BSPC  &lt NUM SPACE   &lt FUN DEL
+                             &kp ESC      &lt NAV RET  &lt MOUSE TAB  &lt SYM BSPC        &lt NUM SPACE  &lt FUN DEL
 #else
-                                                   &lt NAV RET     &lt MOUSE TAB  &lt SYM BSPC  &lt NUM SPACE 
+                                          &lt NAV RET  &lt MOUSE TAB  &lt SYM BSPC        &lt NUM SPACE 
 #endif
                         >;
                 };
@@ -140,7 +140,7 @@
 #ifdef THREE_THUMBS                              
                  	     _____     _____     _____     _____  U_BTN1  U_BTN2
 #else
-                   	             _____     _____     _____  U_BTN1  
+                   	             _____     _____     U_BTN2 U_BTN1  
 #endif
                         >;
                 };
