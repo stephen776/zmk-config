@@ -7,7 +7,6 @@
 #define SYM     1
 #define NUM     2
 #define NAV     3 
-#define MOUSE   4 
 #define FUN     5
 
 #include "behaviors.dtsi"
@@ -25,6 +24,8 @@
 #define CMD_V   &kp LG(V)
 #define CMD_X   &kp LG(X)
 #define CMD_Z   &kp LG(Z)
+#define Z_IN    &kp LG(=)
+#define Z_OUT   &kp LG(-)
 
 /* global config */
 &caps_word {
@@ -50,9 +51,9 @@
    &hml LSFT A  &hml LCTL R  &hml LALT S  &hml LGUI T  &kp G          &kp M  &hmr RGUI N  &hmr RALT E    &hmr RCTRL I  &hmr RSFT O 
    &kp Z        &kp X        &kp C        &kp D        &kp V          &kp K  &kp H        &kp COMMA      &kp DOT       &kp FSLH       
 #ifdef THREE_THUMBS                              
-                             &kp ESC      &lt NAV RET  &lt MOUSE TAB  &lt SYM BSPC        &lt NUM SPACE  &lt FUN DEL
+                             &kp ESC      &lt NAV RET  &lt FUN TAB    &lt SYM BSPC        &lt NUM SPACE  &kp DEL
 #else
-                                          &lt NAV RET  &lt MOUSE TAB  &lt SYM BSPC        &lt NUM SPACE 
+                                          &lt NAV RET  &kp TAB        &lt SYM BSPC        &lt NUM SPACE 
 #endif
                         >;
                 };
@@ -105,7 +106,7 @@
 // -------------------------------      -------------------------------
 // | ESC |     |     |SCRN |CAPWD|      |PGUP |HOME | UP  | END |     |
 // -------------------------------      -------------------------------
-// |LSFT |LCTL |LALT |LGUI |     |      |PGDN |LEFT |DOWN |RIGHT| APP |
+// |LSFT |LCTL |LALT |LGUI |     |      |PGDN |LEFT |DOWN |RIGHT| DEL |
 // -------------------------------      -------------------------------
 // |CMD_Z|CMD_X|CMD_C|     |CMD_V|      |     |     |     |     |     |
 // -------------------------------      -------------------------------
@@ -113,52 +114,31 @@
 //             -------------------      -------------------
                         bindings = <
    &kp ESC      _____     _____    SCNSHT    &caps_word    &kp PG_UP  &kp HOME  &kp UP    &kp END    _____
-   &kp LSFT   &kp LCTL  &kp LALT   &kp LGUI  _____         &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &kp K_APP  
+   &kp LSFT   &kp LCTL  &kp LALT   &kp LGUI  _____         &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &kp DEL  
    CMD_Z      CMD_X     CMD_C      XXXXX     CMD_V         _____      _____      _____    _____      _____      
 #ifdef THREE_THUMBS                              
                    	    _____      _____     _____         _____      _____      _____ 
 #else
-                                   _____     _____         _____      &kp DEL 
+                                   _____     _____         _____      _____ 
 #endif
                         >;
                 };
                 
-                mse_layer {
-// -------------------------------      -------------------------------
-// |     |     |     |     |     |      |     |MW_D |MS_U |MW_U |     |
-// -------------------------------      -------------------------------
-// |LSFT |LCTL |LALT |LGUI |     |      |     |MS_L |MS_D |MS_R |     |
-// -------------------------------      -------------------------------
-// |CMD_Z|CMD_X|CMD_C|     |CMD_V|      |     |     |     |     |     |
-// -------------------------------      -------------------------------
-//             |     |     |     |      |     |MBTN1|MBTN2|
-//             -------------------      -------------------
-                        bindings = <
-   XXXXX     XXXXX     XXXXX     XXXXX     XXXXX     XXXXX  U_WH_D  U_MS_U  U_WH_U  XXXXX 
-   &kp LSFT  &kp LCTL  &kp LALT  &kp LGUI  XXXXX     XXXXX  U_MS_L  U_MS_D  U_MS_R  XXXXX 
-   CMD_Z     CMD_X     CMD_C     XXXXX     CMD_V     XXXXX  XXXXX   XXXXX   XXXXX   XXXXX 
-#ifdef THREE_THUMBS                              
-                 	     _____     _____     _____     _____  U_BTN1  U_BTN2
-#else
-                   	             _____     _____     U_BTN2 U_BTN1  
-#endif
-                        >;
-                };
 
                 fun_layer {
 // -------------------------------      -------------------------------
 // | F12 |  F7 |  F8 |  F9 |BOOT |      |BOOT | BT1 | BT2 | BT3 |BTCLR|
 // -------------------------------      -------------------------------
-// | F11 |  F4 |  F5 |  F6 |     |      |     |     |     |     |     |
+// | F11 |  F4 |  F5 |  F6 | Z+  |      |MUTE |vol+ |vol- |     |     |
 // -------------------------------      -------------------------------
-// | F10 |  F1 |  F2 |  F3 |     |      |     |     |     |     |     |
+// | F10 |  F1 |  F2 |  F3 | Z-  |      |     |     |     |     |     |
 // -------------------------------      -------------------------------
 //             |     |     |     |      |     |     |     |
 //             -------------------      -------------------
                     bindings = <
    &kp F12  &kp F7  &kp F8  &kp F9  &bootloader    &bootloader  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_CLR 
-   &kp F11  &kp F4  &kp F5  &kp F3  XXXXX          XXXXX        XXXXX         XXXXX         XXXXX         XXXXX      
-   &kp F10  &kp F1  &kp F2  &kp F3  XXXXX          XXXXX        XXXXX         XXXXX         XXXXX         XXXXX      
+   &kp F11  &kp F4  &kp F5  &kp F3  Z_IN           &kp C_MUTE   &kp C_VOL_UP  &kb C_VOL_DN  XXXXX         XXXXX      
+   &kp F10  &kp F1  &kp F2  &kp F3  Z_OUT          XXXXX        XXXXX         XXXXX         XXXXX         XXXXX      
 #ifdef THREE_THUMBS                              
                    	_____   _____   _____          _____        _____         _____ 
 #else
