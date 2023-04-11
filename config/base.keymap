@@ -29,7 +29,7 @@
 
 /* global config */
 &caps_word {
-    continue-list = <UNDERSCORE MINUS>;
+    continue-list = <UNDERSCORE MINUS BACKSPACE DELETE>;
 };
 
 / {
