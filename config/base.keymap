@@ -24,8 +24,8 @@
 #define CMD_V   &kp LG(V)
 #define CMD_X   &kp LG(X)
 #define CMD_Z   &kp LG(Z)
-#define Z_IN    &kp LG(=)
-#define Z_OUT   &kp LG(-)
+#define Z_IN    &kp LG(EQUAL)
+#define Z_OUT   &kp LG(MINUS)
 
 /* global config */
 &caps_word {
