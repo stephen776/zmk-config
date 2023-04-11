@@ -53,7 +53,7 @@
 #ifdef THREE_THUMBS                              
                              &kp ESC      &lt NAV RET  &lt FUN TAB    &lt SYM BSPC        &lt NUM SPACE  &kp DEL
 #else
-                                          &lt NAV RET  &kp TAB        &lt SYM BSPC        &lt NUM SPACE 
+                                          &lt NAV RET  &lt FUN TAB    &lt SYM BSPC        &lt NUM SPACE 
 #endif
                         >;
                 };
