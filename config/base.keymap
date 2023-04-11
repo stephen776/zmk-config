@@ -75,7 +75,7 @@
 #ifdef THREE_THUMBS                              
                         &kp LPAR         &kp RPAR   &kp UNDER    _____  _____     _____
 #else
-                                         &kp LPAR   &kp UNDER    _____  _____  
+                                         &td_par    &kp UNDER    _____  _____  
 #endif
                         >;
                 };
