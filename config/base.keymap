@@ -104,7 +104,7 @@
 
                 nav_layer {
 // -------------------------------      -------------------------------
-// | ESC |     |     |SCRN |     |      |PGUP |HOME | UP  | END |     |
+// | ESC |     |     |     |     |      |PGUP |HOME | UP  | END |     |
 // -------------------------------      -------------------------------
 // |LSFT |LCTL |LALT |LGUI |     |      |PGDN |LEFT |DOWN |RIGHT| DEL |
 // -------------------------------      -------------------------------
@@ -113,7 +113,7 @@
 //             |     |     |     |      |     |     |     |
 //             -------------------      -------------------
                         bindings = <
-   &kp ESC      _____     _____    SCNSHT    _____    &kp PG_UP  &kp HOME  &kp UP    &kp END    _____
+   &kp ESC      _____     _____    _____     _____    &kp PG_UP  &kp HOME  &kp UP    &kp END    _____
    &kp LSFT   &kp LCTL  &kp LALT   &kp LGUI  _____    &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &kp DEL  
    CMD_Z      CMD_X     CMD_C      XXXXX     CMD_V    _____      _____      _____    _____      _____      
 #ifdef THREE_THUMBS                              
@@ -131,14 +131,14 @@
 // -------------------------------      -------------------------------
 // | F11 |  F4 |  F5 |  F6 | Z+  |      |MUTE |vol+ |vol- |     |     |
 // -------------------------------      -------------------------------
-// | F10 |  F1 |  F2 |  F3 | Z-  |      |     |     |     |     |     |
+// | F10 |  F1 |  F2 |  F3 | Z-  |      |SCRN |     |     |     |     |
 // -------------------------------      -------------------------------
 //             |     |     |     |      |     |     |     |
 //             -------------------      -------------------
                     bindings = <
    &kp F12  &kp F7  &kp F8  &kp F9  &bootloader    &bootloader  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_CLR 
    &kp F11  &kp F4  &kp F5  &kp F3  Z_IN           &kp C_MUTE   &kp C_VOL_UP  &kp C_VOL_DN  XXXXX         XXXXX      
-   &kp F10  &kp F1  &kp F2  &kp F3  Z_OUT          XXXXX        XXXXX         XXXXX         XXXXX         XXXXX      
+   &kp F10  &kp F1  &kp F2  &kp F3  Z_OUT          SCNSHT       XXXXX         XXXXX         XXXXX         XXXXX      
 #ifdef THREE_THUMBS                              
                    	_____   _____   _____          _____        _____         _____ 
 #else
