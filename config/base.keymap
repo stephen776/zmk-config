@@ -7,7 +7,7 @@
 #define SYM     1
 #define NUM     2
 #define NAV     3 
-#define FUN     5
+#define FUN     4
 
 #include "behaviors.dtsi"
 #include "combos.dtsi"
@@ -104,7 +104,7 @@
 
                 nav_layer {
 // -------------------------------      -------------------------------
-// | ESC |     |     |SCRN |CAPWD|      |PGUP |HOME | UP  | END |     |
+// | ESC |     |     |SCRN |     |      |PGUP |HOME | UP  | END |     |
 // -------------------------------      -------------------------------
 // |LSFT |LCTL |LALT |LGUI |     |      |PGDN |LEFT |DOWN |RIGHT| DEL |
 // -------------------------------      -------------------------------
@@ -113,13 +113,13 @@
 //             |     |     |     |      |     |     |     |
 //             -------------------      -------------------
                         bindings = <
-   &kp ESC      _____     _____    SCNSHT    &caps_word    &kp PG_UP  &kp HOME  &kp UP    &kp END    _____
-   &kp LSFT   &kp LCTL  &kp LALT   &kp LGUI  _____         &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &kp DEL  
-   CMD_Z      CMD_X     CMD_C      XXXXX     CMD_V         _____      _____      _____    _____      _____      
+   &kp ESC      _____     _____    SCNSHT    _____    &kp PG_UP  &kp HOME  &kp UP    &kp END    _____
+   &kp LSFT   &kp LCTL  &kp LALT   &kp LGUI  _____    &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &kp DEL  
+   CMD_Z      CMD_X     CMD_C      XXXXX     CMD_V    _____      _____      _____    _____      _____      
 #ifdef THREE_THUMBS                              
-                   	    _____      _____     _____         _____      _____      _____ 
+                   	    _____      _____     _____    _____      _____      _____ 
 #else
-                                   _____     _____         _____      _____ 
+                                   _____     _____    _____      _____ 
 #endif
                         >;
                 };
