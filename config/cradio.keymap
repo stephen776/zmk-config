@@ -1,0 +1,11 @@
+/*
+ * copyright (c) 2020 the zmk contributors
+ *
+ * spdx-license-identifier: mit
+ */
+
+/* source keypos helpers*/
+#include "../keypos_def/keypos_34keys.h"
+
+/* source the main keymap */
+#include "base.keymap"
