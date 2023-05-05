@@ -73,7 +73,7 @@
    &kp COLON  &kp DLLR  &kp PRCNT        &kp CARET  &kp PLUS     XXXXX  &kp LGUI  &kp LALT  &kp LCTL  &kp LSFT
    &kp TILDE  &kp EXCL  &kp AT           &kp HASH   &kp PIPE     XXXXX  XXXXX     XXXXX     XXXXX     XXXXX
 #ifdef THREE_THUMBS
-                        &kp LPAR         &td_par    &kp UNDER    _____  _____     _____
+                        &kp LPAR         &kp RPAR   &kp UNDER    _____  _____     _____
 #else
                                          &td_par    &kp UNDER    _____  _____
 #endif
