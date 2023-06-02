@@ -33,6 +33,14 @@
 };
 
 / {
+        conditional_layers {
+          compatible = "zmk,conditional-layers";
+          tri_layer {
+            if-layers = <2 3>;
+            then-layer = <4>;
+          };
+        };
+
         keymap {
                 compatible = "zmk,keymap";
 
@@ -51,9 +59,9 @@
    &hml LSFT A  &hml LCTL R  &hml LALT S  &hml LGUI T  &kp G          &kp M  &hmr RGUI N  &hmr RALT E    &hmr RCTRL I  &hmr RSFT O
    &kp Z        &kp X        &kp C        &kp D        &kp V          &kp K  &kp H        &kp COMMA      &kp DOT       &kp FSLH
 #ifdef THREE_THUMBS
-                             &kp ESC      &lt NAV RET  &lt FUN TAB    &lt SYM BSPC        &lt NUM SPACE  &kp DEL
+                             &kp ESC      &lt NAV RET  &mt LSFT TAB   &lt SYM BSPC        &lt NUM SPACE  &kp DEL
 #else
-                                          &lt NAV RET  &lt FUN TAB    &lt SYM BSPC        &lt NUM SPACE
+                                          &lt NAV RET  &mt LSFT TAB   &lt SYM BSPC        &lt NUM SPACE
 #endif
                         >;
                 };
