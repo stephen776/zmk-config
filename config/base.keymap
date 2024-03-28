@@ -16,7 +16,7 @@
 #define _____ &trans
 
 /* macros */
-#define SCNSHT  &kp LC(LS(LG(4)))
+#define SCNSHT  &kp LC(LS(LG(N4)))
 #define CMD_A   &kp LG(A)
 #define CMD_S   &kp LG(S)
 #define CMD_C   &kp LG(C)
