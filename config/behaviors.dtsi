@@ -29,13 +29,5 @@
       hold-trigger-key-positions = <KEYS_L THUMBS>;    // <---[[left-hand keys]]
       hold-trigger-on-release;            // requires PR #1423
     }; 
-
-    td_par: tap_dance_par {
-      compatible = "zmk,behavior-tap-dance";
-      label = "TAP_DANCE_PAR";
-      #binding-cells = <0>;
-      tapping-term-ms = <250>;
-      bindings = <&kp LPAR>, <&kp RPAR>;
-    };
   };
 };
