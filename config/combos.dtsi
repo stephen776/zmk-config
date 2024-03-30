@@ -19,13 +19,6 @@
 / {
     combos {
         compatible = "zmk,combos";
-/* left thumb */
-COMBO(esc,  &kp ESC,  LH0 LH1, DEFAULT)
-COMBO(zero, &kp N0,   LH0 LH1, NUM)
-COMBO(rpar, &kp RPAR, LH0 LH1, SYM)
-
-/* right thumb */     
-COMBO(del, &kp DEL, RH0 RH1, DEFAULT NAV)
 
 /* other */
 COMBO(wf_esc, &kp ESC,    LT3 LT2, DEFAULT)
