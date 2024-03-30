@@ -51,7 +51,7 @@
    &kp Q        &kp W        &kp F        &kp P        &kp B          &kp J  &kp L        &kp U          &kp Y         &kp SQT
    &hml LSFT A  &hml LCTL R  &hml LALT S  &hml LGUI T  &kp G          &kp M  &hmr RGUI N  &hmr RALT E    &hmr RCTRL I  &hmr RSFT O
    &kp Z        &kp X        &kp C        &kp D        &kp V          &kp K  &kp H        &kp COMMA      &kp DOT       &kp FSLH
-#ifdef 
+#ifdef THREE_THUMBS 
                              &kp ESC      &lt LOWER RET  &mt LSFT TAB   &lt NAV BSPC        &lt RAISE SPACE  &kp DEL
 #else
                                           &lt LOWER RET  &mt LSFT TAB   &lt NAV BSPC        &lt RAISE SPACE
@@ -141,9 +141,9 @@
    &bootloader  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_CLR  &kp C_MUTE   &kp C_VOL_UP  Z_IN    XXXXX   &bootloader
    XXXXX        XXXXX         XXXXX         XXXXX         XXXXX       SCNSHT       &kp C_VOL_DN  Z_OUT   XXXXX   XXXXX
 #ifdef THREE_THUMBS
-                   	_____   _____   _____          _____        _____         _____
+                             	_____         _____         _____       _____        _____         _____
 #else
-                            _____   _____          _____        _____
+                                            _____         _____       _____        _____
 #endif
                     >;
                 };
