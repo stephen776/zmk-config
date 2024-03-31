@@ -52,9 +52,9 @@
    &hml LSFT A  &hml LCTL R  &hml LALT S  &hml LGUI T  &kp G            &kp M  &hmr RGUI N  &hmr RALT E    &hmr RCTRL I  &hmr RSFT O
    &kp Z        &kp X        &kp C        &kp D        &kp V            &kp K  &kp H        &kp COMMA      &kp DOT       &kp FSLH
 #ifdef THREE_THUMBS
-                             &kp ESC      &lt LOWER RET  &mt LSFT TAB   &lt NAV BSPC        &lt RAISE SPACE  &kp DEL
+                             &kp ESC      &lt NAV RET  &mt LSFT TAB   &lt LOWER BSPC        &lt RAISE SPACE  &kp DEL
 #else
-                                          &lt LOWER RET  &mt LSFT TAB   &lt NAV BSPC        &lt RAISE SPACE
+                                          &lt NAV RET  &mt LSFT TAB   &lt LOWER BSPC        &lt RAISE SPACE
 #endif
                         >;
                 };
