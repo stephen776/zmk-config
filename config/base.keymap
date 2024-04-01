@@ -87,14 +87,14 @@
 // -------------------------------      -------------------------------
 // |LSFT |LCTL |LALT |LGUI |     |      |     |LGUI |LALT |LCTL |LSFT |
 // -------------------------------      -------------------------------
-// |     |     |     |     |     |      |     |     |     |     |     |
+// | F1  | F2  | F3  | F4  | F5  |      | F6  | F7  | F8  | F9  | F10 |
 // -------------------------------      -------------------------------
 //             |     |     |     |      |     |     |     |
 //             -------------------      -------------------
                         bindings = <
-   &kp N1    &kp N2   &kp N3   &kp N4   &kp N5  &kp N6 &kp N7   &kp N8    &kp N9    &kp N0
-   &kp LSFT  &kp LCTL &kp LALT &kp LGUI XXXXX   XXXXX  &kp LGUI &kp LALT  &kp LCTL  &kp LSFT
-   XXXXX     XXXXX    XXXXX    XXXXX    XXXXX   XXXXX  XXXXX    XXXXX     XXXXX     XXXXX
+   &kp N1    &kp N2   &kp N3   &kp N4   &kp N5  &kp N6 &kp N7   &kp N8   &kp N9   &kp N0
+   &kp LSFT  &kp LCTL &kp LALT &kp LGUI XXXXX   XXXXX  &kp LGUI &kp LALT &kp LCTL &kp LSFT
+   &kp F1    &kp F2   &kp F3   &kp F4   &kp F5  &kp F6 &kp F7   &kp F8   &kp F9   &kp F10
 #ifdef THREE_THUMBS
                    	  _____    _____    _____   _____  _____     _____
 #else
@@ -105,47 +105,24 @@
 
                 nav_layer { 
 // -------------------------------      -------------------------------
-// | ESC |     |     |     |     |      |PGUP |HOME | UP  | END |     |
+// | ESC |     |     |     |MUTE |      |PGUP |HOME | UP  | END |     |
 // -------------------------------      -------------------------------
-// |LSFT |LCTL |LALT |LGUI |     |      |PGDN |LEFT |DOWN |RIGHT| DEL |
+// |LSFT |LCTL |LALT |LGUI |vol+ |      |PGDN |LEFT |DOWN |RIGHT| DEL |
 // -------------------------------      -------------------------------
-// |     |     |     |     |     |      |     |     |     |     |     |
+// |BOOT |BT P |BT N |BTCLR|vol- |      |SCRN |  Z+ |  Z- |     |BOOT |
 // -------------------------------      -------------------------------
 //             |     |     |     |      |     |     |     |
 //             -------------------      -------------------
                         bindings = <
-   &kp ESC      _____     _____    _____     _____    &kp PG_UP  &kp HOME  &kp UP    &kp END    _____
-   &kp LSFT   &kp LCTL  &kp LALT   &kp LGUI  _____    &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &kp DEL
-   _____      _____     _____      _____     _____    _____      _____      _____    _____      _____
+   &kp ESC     _____      _____       _____      &kp C_MUTE     &kp PG_UP  &kp HOME  &kp UP    &kp END   _____
+   &kp LSFT    &kp LCTL   &kp LALT    &kp LGUI   &kp C_VOL_UP   &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT &kp DEL
+   &bootloader &bt BT_NXT &bt BT_PRV  &bt BT_CLR &kp C_VOL_DN   SCNSHT     Z_IN      Z_OUT     _____     &bootloader
 #ifdef THREE_THUMBS
-                   	    _____      _____     _____    _____      _____      _____
+                   	    _____      _____     _____           _____      _____      _____
 #else
-                                   _____     _____    _____      _____
+                                   _____     _____           _____      _____
 #endif
                         >;
-                };
-
-
-                fun_layer {
-// -------------------------------      -------------------------------
-// | F1  | F2  | F3  | F4  | F5  |      | F6  | F7  | F8  | F9  | F10 |
-// -------------------------------      -------------------------------
-// | BOOT| BT0 | BT1 | BT2 |BTCLR|      |MUTE |vol+ |  Z+ |     | BOOT|
-// -------------------------------      -------------------------------
-// |     |     |     |     |     |      |SCRN |vol- |  Z- |     |     |
-// -------------------------------      -------------------------------
-//             |     |     |     |      |     |     |     |
-//             -------------------      -------------------
-                    bindings = <
-   &kp F1       &kp F2        &kp F3        &kp F4        &kp F5      &kp F6       &kp F7        &kp F8  &kp F9  &kp F10
-   &bootloader  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_CLR  &kp C_MUTE   &kp C_VOL_UP  Z_IN    XXXXX   &bootloader
-   XXXXX        XXXXX         XXXXX         XXXXX         XXXXX       SCNSHT       &kp C_VOL_DN  Z_OUT   XXXXX   XXXXX
-#ifdef THREE_THUMBS
-                             	_____         _____         _____       _____        _____         _____
-#else
-                                            _____         _____       _____        _____
-#endif
-                    >;
                 };
 
         };
