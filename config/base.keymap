@@ -47,13 +47,13 @@
 //             | ESC | RET | TAB |     | BSPC| SPC  | DEL |
 //             -------------------     --------------------
                         bindings = <
-   &kp Q        &kp W        &kp F        &kp P        &kp B          &kp J  &kp L        &kp U          &kp Y         &kp SQT
-   &hml LSFT A  &hml LCTL R  &hml LALT S  &hml LGUI T  &kp G          &kp M  &hmr RGUI N  &hmr RALT E    &hmr RCTRL I  &hmr RSFT O
-   &kp Z        &kp X        &kp C        &kp D        &kp V          &kp K  &kp H        &kp COMMA      &kp DOT       &kp FSLH
+   &kp Q  &kp W  &kp F  &kp P  &kp B      &kp J  &kp L  &kp U     &kp Y   &kp SQT
+   &kp A  &kp R  &kp S  &kp T  &kp G      &kp M  &kp N  &kp E     &kp I   &kp O
+   &kp Z  &kp X  &kp C  &kp D  &kp V      &kp K  &kp H  &kp COMMA &kp DOT &kp FSLH
 #ifdef THREE_THUMBS
-                             &kp ESC      &lt NAV RET  &mt LSFT TAB   &kp BSPC            &lt SYM SPACE  &kp DEL
+   &kp ESC &lt NAV RET  &mt LSFT TAB   &kp BSPC &lt SYM SPACE  &kp DEL
 #else
-                                          &lt NAV RET  &mt LSFT TAB   &kp BSPC            &lt SYM SPACE
+           &lt NAV RET  &mt LSFT TAB   &kp BSPC &lt SYM SPACE
 #endif
                         >;
                 };
