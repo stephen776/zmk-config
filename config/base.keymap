@@ -4,10 +4,9 @@
 
 /* layers */
 #define DEFAULT 0
-#define LOWER   1
-#define RAISE   2
-#define NAV     3 
-#define FUN     4
+#define SYM   1
+#define NUM   2
+#define NAV     3
 
 #include "behaviors.dtsi"
 #include "combos.dtsi"
@@ -48,18 +47,18 @@
 //             | ESC | RET | TAB |     | BSPC| SPC  | DEL |
 //             -------------------     --------------------
                         bindings = <
-   &kp Q        &kp W        &kp F        &kp P        &kp B            &kp J  &kp L        &kp U          &kp Y         &kp SQT
-   &hml LSFT A  &hml LCTL R  &hml LALT S  &hml LGUI T  &kp G            &kp M  &hmr RGUI N  &hmr RALT E    &hmr RCTRL I  &hmr RSFT O
-   &kp Z        &kp X        &kp C        &kp D        &kp V            &kp K  &kp H        &kp COMMA      &kp DOT       &kp FSLH
+   &kp Q        &kp W        &kp F        &kp P        &kp B          &kp J  &kp L        &kp U          &kp Y         &kp SQT
+   &hml LSFT A  &hml LCTL R  &hml LALT S  &hml LGUI T  &kp G          &kp M  &hmr RGUI N  &hmr RALT E    &hmr RCTRL I  &hmr RSFT O
+   &kp Z        &kp X        &kp C        &kp D        &kp V          &kp K  &kp H        &kp COMMA      &kp DOT       &kp FSLH
 #ifdef THREE_THUMBS
-                             &kp ESC      &lt NAV RET  &mt LSFT TAB   &lt LOWER BSPC        &lt RAISE SPACE  &kp DEL
+                             &kp ESC      &lt NAV RET  &mt LSFT TAB   &lt SYM BSPC        &lt NUM SPACE  &kp DEL
 #else
-                                          &lt NAV RET  &mt LSFT TAB   &lt LOWER BSPC        &lt RAISE SPACE
+                                          &lt NAV RET  &mt LSFT TAB   &lt SYM BSPC        &lt NUM SPACE
 #endif
                         >;
                 };
 
-                lower_layer {
+                sym_layer {
 // -------------------------------     -------------------------------
 // |  !  |  @  |  #  |  $  |  %  |     |  ^  |  &  |  *  |  (  |  )  |
 // -------------------------------     -------------------------------
@@ -81,7 +80,7 @@
                         >;
                 };
 
-                raise_layer {
+                num_layer {
 // -------------------------------      -------------------------------
 // |  1  |  2  |  3  | 4   |  5  |      |  6  |  7  |  8  |  9  |  0  |
 // -------------------------------      -------------------------------
@@ -109,14 +108,14 @@
 // -------------------------------      -------------------------------
 // |LSFT |LCTL |LALT |LGUI |vol+ |      |PGDN |LEFT |DOWN |RIGHT| DEL |
 // -------------------------------      -------------------------------
-// |BOOT |BT P |BT N |BTCLR|vol- |      |SCRN |  Z+ |  Z- |     |BOOT |
+// |     |BT P |BT N |BTCLR|vol- |      |SCRN |  Z+ |  Z- |     |     |
 // -------------------------------      -------------------------------
 //             |     |     |     |      |     |     |     |
 //             -------------------      -------------------
                         bindings = <
    &kp ESC     _____      _____       _____      &kp C_MUTE     &kp PG_UP  &kp HOME  &kp UP    &kp END   _____
    &kp LSFT    &kp LCTL   &kp LALT    &kp LGUI   &kp C_VOL_UP   &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT &kp DEL
-   &bootloader &bt BT_NXT &bt BT_PRV  &bt BT_CLR &kp C_VOL_DN   SCNSHT     Z_IN      Z_OUT     _____     &bootloader
+   _____       &bt BT_NXT &bt BT_PRV  &bt BT_CLR &kp C_VOL_DN   SCNSHT     Z_IN      Z_OUT     _____     _____
 #ifdef THREE_THUMBS
                    	    _____      _____     _____           _____      _____      _____
 #else
