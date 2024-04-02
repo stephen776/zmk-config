@@ -65,14 +65,14 @@
 // -------------------------------      -------------------------------
 // |LSFT |LCTL |LALT |LGUI |     |      |PGDN |LEFT |DOWN |RIGHT| DEL |
 // -------------------------------      -------------------------------
-// |     |     |     |     |     |      |     |BPSC | TAB |     |     |
+// |CMD_Z|CMD_X|CMD_C|     |CMD_V|      | ENT |BPSC | TAB |     |     |
 // -------------------------------      -------------------------------
 //             |     |     |     |      |     |     |     |
 //             -------------------      -------------------
                         bindings = <
    &kp ESC   _____     _____     _____     _____    &kp PG_UP  &kp HOME  &kp UP    &kp END   &caps_word
    &sk LSFT  &sk LCTL  &sk LALT  &sk LGUI  _____    &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT &kp DEL
-   _____     _____     _____     _____     _____    _____      &kp BSPC  &kp TAB   _____     _____
+   CMD_Z     CMD_X     CMD_C     _____     CMD_V    &kp RET    &kp BSPC  &kp TAB   _____     _____
 #ifdef THREE_THUMBS
                    	  _____  _____  _____    _____  _____  _____
 #else
