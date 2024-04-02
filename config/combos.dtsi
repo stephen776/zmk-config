@@ -24,7 +24,7 @@
 COMBO(wf_esc, &kp ESC,    LT3 LT2, DEFAULT)
   
 /* A+O to activate caps_word */
-COMBO(capsw,  &caps_word, LM4 RM4, DEFAULT) 
+/*COMBO(capsw,  &caps_word, LM4 RM4, DEFAULT)*/
 
 /* cut/copy/paste */    
 COMBO(copy,   &kp LG(C),  LB3 LB2, DEFAULT)
