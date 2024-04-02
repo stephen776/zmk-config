@@ -74,9 +74,9 @@
    &sk LSFT  &sk LCTL  &sk LALT  &sk LGUI  _____    &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT &kp DEL
    _____     _____     _____     _____     _____    _____      &kp BSPC  &kp TAB   _____     _____
 #ifdef THREE_THUMBS
-                   	    _____      _____     _____           _____      &mo NUM      _____
+                   	    _____  _____  _____    _____  &mo NUM  _____
 #else
-                                   _____     _____           _____      &mo NUM
+                               _____  _____    _____  &mo NUM
 #endif
                         >;
                 };
@@ -96,9 +96,9 @@
    &sk LSFT  &sk LCTL &sk LALT  &sk LGUI  _____      &kp PIPE  &kp PLUS  &kp EQUAL       &kp LBRC &kp RBRC
    &kp COLON &kp SEMI &kp TILDE &kp GRAVE _____      &kp BSLH  &kp MINUS &kp UNDER       &kp LBKT &kp RBKT
 #ifdef THREE_THUMBS
-                   	   _____    &mo NUM   &mo FUN    _____     _____    _____
+                   	   _____  &mo NUM  &mo FUN    _____  _____  _____
 #else
-                    	          &mo NUM   &mo FUN    _____     _____
+                    	        &mo NUM  &mo FUN    _____  _____
 #endif
                         >;
                 };
@@ -107,16 +107,16 @@
 // -------------------------------      -------------------------------
 // |  1  |  2  |  3  | 4   |  5  |      |  6  |  7  |  8  |  9  |  0  |
 // -------------------------------      -------------------------------
-// |LSFT |LCTL |LALT |LGUI |     |      |     |LGUI |LALT |LCTL |LSFT |
+// |LSFT |LCTL |LALT |LGUI |     |      |     |  4 |   5  |  6  |     |
 // -------------------------------      -------------------------------
-// |     |     |     |     |     |      |     |     |     |     |     |
+// |     |     |     |     |     |      |  0  |  1  |  2  |  3  |     |
 // -------------------------------      -------------------------------
 //             |     |     |     |      |     |     |     |
 //             -------------------      -------------------
                         bindings = <
-   &kp N1    &kp N2   &kp N3   &kp N4    &kp N5  &kp N6 &kp N7   &kp N8   &kp N9   &kp N0
-   &sk LSFT  &sk LCTL &sk LALT &sk LGUI  _____   _____  &sk LGUI &sk LALT &sk LCTL &sk LSFT
-   _____     _____    _____    _____     _____   _____  _____    _____    _____    _____
+   &kp N1    &kp N2   &kp N3   &kp N4    &kp N5  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0
+   &sk LSFT  &sk LCTL &sk LALT &sk LGUI  _____   _____   &kp N4  &kp N5  &kp N6  _____
+   _____     _____    _____    _____     _____   &kp N0  &kp N1  &kp N2  &kp N3  _____
 #ifdef THREE_THUMBS
                    	  _____  _____  _____    _____  _____  _____
 #else
@@ -132,14 +132,14 @@
 // -------------------------------      -------------------------------
 // |LSFT |LCTL |LALT |LGUI |     |      |MUTE |vol+ |  Z+ |     |     |
 // -------------------------------      -------------------------------
-// |     |BT P |BT N |BTCLR|     |      |SCRN |vol- |  Z- |     |     |
+// |BOOT |BT P |BT N |BTCLR|     |      |SCRN |vol- |  Z- |     |BOOT |
 // -------------------------------      -------------------------------
 //             |     |     |     |      |     |     |     |
 //             -------------------      -------------------
                         bindings = <
-   &kp F1    &kp F2     &kp F3      &kp F4      &kp F5 &kp F6      &kp F7        &kp F8 &kp F9 &kp F10
-   &sk LSFT  &sk LCTL   &sk LALT    &sk LGUI    _____  &kp C_MUTE  &kp C_VOL_UP  Z_IN   _____  _____
-   _____     &bt BT_NXT &bt BT_PRV  &bt BT_CLR  _____  SCNSHT      &kp C_VOL_DN  Z_OUT  _____  _____
+   &kp F1      &kp F2     &kp F3      &kp F4      &kp F5 &kp F6      &kp F7        &kp F8 &kp F9 &kp F10
+   &sk LSFT    &sk LCTL   &sk LALT    &sk LGUI    _____  &kp C_MUTE  &kp C_VOL_UP  Z_IN   _____  _____
+   &bootloader &bt BT_NXT &bt BT_PRV  &bt BT_CLR  _____  SCNSHT      &kp C_VOL_DN  Z_OUT  _____  &bootloader
 #ifdef THREE_THUMBS
                    	  _____  _____  _____   _____  _____  _____
 #else
