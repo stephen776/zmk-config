@@ -29,8 +29,8 @@
         conditional_layers {
           compatible = "zmk,conditional-layers";
           tri_layer {
-            if-layers = <2 3>;
-            then-layer = <4>;
+            if-layers = <1 2>;
+            then-layer = <3>;
           };
         };
 
@@ -74,9 +74,9 @@
    &sk LSFT  &sk LCTL  &sk LALT  &sk LGUI  _____    &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT &kp DEL
    _____     _____     _____     _____     _____    _____      &kp BSPC  &kp TAB   _____     _____
 #ifdef THREE_THUMBS
-                   	    _____  _____  _____    _____  &mo NUM
+                   	  _____  _____  _____    _____  _____  _____
 #else
-                               _____  _____    _____  &mo NUM
+                   	         _____  _____    _____  _____
 #endif
                         >;
                 };
@@ -96,9 +96,9 @@
    &sk LSFT  &sk LCTL &sk LALT  &sk LGUI  _____      &kp PIPE  &kp PLUS  &kp EQUAL       &kp LBRC &kp RBRC
    &kp COLON &kp SEMI &kp TILDE &kp GRAVE _____      &kp BSLH  &kp MINUS &kp UNDER       &kp LBKT &kp RBKT
 #ifdef THREE_THUMBS
-                   	   _____  &mo NUM  &mo FUN    _____  _____  _____
+                   	  _____  _____  &mo FUN    _____  _____  _____
 #else
-                    	        &mo NUM  &mo FUN    _____  _____
+                   	         _____  &mo FUN    _____  _____
 #endif
                         >;
                 };
