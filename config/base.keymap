@@ -74,9 +74,9 @@
    &sk LSFT  &sk LCTL  &sk LALT  &sk LGUI  _____    &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT &kp DEL
    CMD_Z     CMD_X     CMD_C     _____     CMD_V    &kp RET    &kp BSPC  &kp TAB   _____     _____
 #ifdef THREE_THUMBS
-                   	  _____  _____  _____    _____  _____  _____
+                   	  _____  _____  _____    &kp RET  _____  _____
 #else
-                   	         _____  _____    _____  _____
+                   	         _____  _____    &kp RET  _____
 #endif
                         >;
                 };
