@@ -19,6 +19,10 @@
 #define SCNSHT  &kp LC(LS(LG(N4)))
 #define Z_IN    &kp LG(EQUAL)
 #define Z_OUT   &kp LG(MINUS)
+#define CMD_C   &kp LG(C)
+#define CMD_V   &kp LG(V)
+#define CMD_X   &kp LG(X)
+#define CMD_Z   &kp LG(Z)
 
 /* global config */
 &caps_word {
@@ -83,7 +87,7 @@
 
                 sym_layer {
 // -------------------------------     -------------------------------
-// |  !  |  @  |  #  |  $  |  %  |     |  ^  |  &  |  *  |  (  |  )  |
+// |  !  |  @  |  '#'  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  |
 // -------------------------------     -------------------------------
 // |LSFT |LCTL |LALT |LGUI |     |     |  |  |  +  |  =  |  {  |  }  |
 // -------------------------------     -------------------------------
