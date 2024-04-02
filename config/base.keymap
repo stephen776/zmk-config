@@ -71,7 +71,7 @@
 //             -------------------      -------------------
                         bindings = <
    &kp ESC   _____     _____     _____     _____    &kp PG_UP  &kp HOME  &kp UP    &kp END   _____
-   &kp LSFT  &kp LCTL  &kp LALT  &kp LGUI  _____    &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT &kp DEL
+   &sk LSFT  &sk LCTL  &sk LALT  &sk LGUI  _____    &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT &kp DEL
    _____     _____     _____     _____     _____    _____      _____     _____     _____     _____
 #ifdef THREE_THUMBS
                    	    _____      _____     _____           _____      &mo NUM      _____
@@ -93,12 +93,12 @@
 //             -------------------     -------------------
                         bindings = <
    &kp EXCL  &kp AT   &kp HASH  &kp DLLR  &kp PRCNT  &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR
-   &kp LSFT  &kp LCTL &kp LALT  &kp LGUI  _____      &kp PIPE  &kp PLUS  &kp EQUAL       &kp LBRC &kp RBRC
+   &sk LSFT  &sk LCTL &sk LALT  &sk LGUI  _____      &kp PIPE  &kp PLUS  &kp EQUAL       &kp LBRC &kp RBRC
    &kp COLON &kp SEMI &kp TILDE &kp GRAVE _____      &kp BSLH  &kp MINUS &kp UNDER       &kp LBKT &kp RBKT
 #ifdef THREE_THUMBS
-                   	   _____     &mo NUM  &mo FUN    _____     _____    _____
+                   	   _____    &mo NUM   &mo FUN    _____     _____    _____
 #else
-                    	           &mo NUM  &mo FUN    _____     _____
+                    	          &mo NUM   &mo FUN    _____     _____
 #endif
                         >;
                 };
@@ -109,18 +109,18 @@
 // -------------------------------      -------------------------------
 // |LSFT |LCTL |LALT |LGUI |     |      |     |LGUI |LALT |LCTL |LSFT |
 // -------------------------------      -------------------------------
-// | F1  | F2  | F3  | F4  | F5  |      | F6  | F7  | F8  | F9  | F10 |
+// |     |     |     |     |     |      |     |     |     |     |     |
 // -------------------------------      -------------------------------
 //             |     |     |     |      |     |     |     |
 //             -------------------      -------------------
                         bindings = <
-   &kp N1    &kp N2   &kp N3   &kp N4   &kp N5  &kp N6 &kp N7   &kp N8   &kp N9   &kp N0
-   &kp LSFT  &kp LCTL &kp LALT &kp LGUI _____   _____  &kp LGUI &kp LALT &kp LCTL &kp LSFT
-   &kp F1    &kp F2   &kp F3   &kp F4   &kp F5  &kp F6 &kp F7   &kp F8   &kp F9   &kp F10
+   &kp N1    &kp N2   &kp N3   &kp N4    &kp N5  &kp N6 &kp N7   &kp N8   &kp N9   &kp N0
+   &sk LSFT  &sk LCTL &sk LALT &sk LGUI  _____   _____  &sk LGUI &sk LALT &sk LCTL &sk LSFT
+   _____     _____    _____    _____     _____   _____  _____    _____    _____    _____
 #ifdef THREE_THUMBS
-                   	  _____    _____    _____   _____  _____     _____
+                   	  _____  _____  _____    _____  _____  _____
 #else
-                   	           _____    _____    _____  _____
+                   	         _____  _____    _____  _____
 #endif
                         >;
                 };
@@ -128,17 +128,17 @@
 
                 fun_layer {
 // -------------------------------      -------------------------------
-// |     |     |     |     |     |      |     |     |     |     |     |
+// | F1  | F2  | F3  | F4  | F5  |      | F6  | F7  | F8  | F9  | F10 |
 // -------------------------------      -------------------------------
-// |     |     |     |     |     |      |MUTE |vol+ |  Z+ |     |     |
+// |LSFT |LCTL |LALT |LGUI |     |      |MUTE |vol+ |  Z+ |     |     |
 // -------------------------------      -------------------------------
 // |     |BT P |BT N |BTCLR|     |      |SCRN |vol- |  Z- |     |     |
 // -------------------------------      -------------------------------
 //             |     |     |     |      |     |     |     |
 //             -------------------      -------------------
                         bindings = <
-   _____     _____      _____       _____       _____  _____       _____         _____  _____  _____
-   _____     _____      _____       _____       _____  &kp C_MUTE  &kp C_VOL_UP  Z_IN   _____  _____
+   &kp F1    &kp F2     &kp F3      &kp F4      &kp F5 &kp F6      &kp F7        &kp F8 &kp F9 &kp F10
+   &sk LSFT  &sk LCTL   &sk LALT    &sk LGUI    _____  &kp C_MUTE  &kp C_VOL_UP  Z_IN   _____  _____
    _____     &bt BT_NXT &bt BT_PRV  &bt BT_CLR  _____  SCNSHT      &kp C_VOL_DN  Z_OUT  _____  _____
 #ifdef THREE_THUMBS
                    	  _____  _____  _____   _____  _____  _____
