@@ -74,7 +74,7 @@
    &sk LSFT  &sk LCTL  &sk LALT  &sk LGUI  _____    &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT &kp DEL
    _____     _____     _____     _____     _____    _____      &kp BSPC  &kp TAB   _____     _____
 #ifdef THREE_THUMBS
-                   	    _____  _____  _____    _____  &mo NUM  _____
+                   	    _____  _____  _____    _____  &mo NUM
 #else
                                _____  _____    _____  &mo NUM
 #endif
