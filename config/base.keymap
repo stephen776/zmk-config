@@ -101,9 +101,9 @@
    &sk LSFT  &sk LCTL &sk LALT  &sk LGUI  &kp PIPE   &kp EQUAL &kp LPAR  &kp LBRC        &kp LBKT &kp MINUS
    &kp COLON &kp SEMI &kp TILDE &kp GRAVE &kp BSLH   &kp UNDER &kp RPAR  &kp RBRC        &kp RBKT _____
 #ifdef THREE_THUMBS
-                   	  _____  _____  &mo FUN    _____  _____  _____
+                   	  _____  _____  _____    _____  _____  _____
 #else
-                   	         _____  &mo FUN    _____  _____
+                   	         _____  _____    _____  _____
 #endif
                         >;
                 };
