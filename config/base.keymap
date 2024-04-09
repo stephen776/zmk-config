@@ -23,6 +23,7 @@
 #define CMD_V   &kp LG(V)
 #define CMD_X   &kp LG(X)
 #define CMD_Z   &kp LG(Z)
+#define HYPER   &sk LC(LS(LG(LALT)))
 
 /* global config */
 &caps_word {
@@ -67,7 +68,7 @@
 // -------------------------------      -------------------------------
 // | ESC |     |     |     |     |      |PGUP |HOME | UP  | END | CAP |
 // -------------------------------      -------------------------------
-// |LSFT |LCTL |LALT |LGUI |     |      |PGDN |LEFT |DOWN |RIGHT| DEL |
+// |LSFT |LCTL |LALT |LGUI |HYPER|      |PGDN |LEFT |DOWN |RIGHT| DEL |
 // -------------------------------      -------------------------------
 // |CMD_Z|CMD_X|CMD_C|RGUI |CMD_V|      | ENT |BPSC | TAB |     |     |
 // -------------------------------      -------------------------------
@@ -75,7 +76,7 @@
 //             -------------------      -------------------
                         bindings = <
    &kp ESC   _____     _____     _____     _____    &kp PG_UP  &kp HOME  &kp UP    &kp END   &caps_word
-   &sk LSFT  &sk LCTL  &sk LALT  &sk LGUI  _____    &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT &kp DEL
+   &sk LSFT  &sk LCTL  &sk LALT  &sk LGUI  HYPER     &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT &kp DEL
    CMD_Z     CMD_X     CMD_C     &sk RGUI  CMD_V    &kp RET    &kp BSPC  &kp TAB   _____     _____
 #ifdef THREE_THUMBS
                    	  _____  _____  _____    _____  _____  _____
