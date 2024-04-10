@@ -70,14 +70,14 @@
 // -------------------------------      -------------------------------
 // |LSFT |LCTL |LALT |LGUI |HYPER|      |PGDN |LEFT |DOWN |RIGHT| DEL |
 // -------------------------------      -------------------------------
-// |CMD_Z|CMD_X|CMD_C|RGUI |CMD_V|      | ENT |BPSC | TAB |     |     |
+// |CMD_Z|CMD_X|CMD_C|     |CMD_V|      | ENT |BPSC | TAB |     |     |
 // -------------------------------      -------------------------------
 //             |     |     |     |      |     |     |     |
 //             -------------------      -------------------
                         bindings = <
-   &kp ESC   _____     _____     _____     _____    &kp PG_UP  &kp HOME  &kp UP    &kp END   &caps_word
-   &sk LSFT  &sk LCTL  &sk LALT  &sk LGUI  HYPER     &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT &kp DEL
-   CMD_Z     CMD_X     CMD_C     &sk RGUI  CMD_V    &kp RET    &kp BSPC  &kp TAB   _____     _____
+   &kp ESC   _____     _____     _____    _____    &kp PG_UP  &kp HOME  &kp UP    &kp END   &caps_word
+   &sk LSFT  &sk LCTL  &sk LALT  &sk LGUI HYPER    &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT &kp DEL
+   CMD_Z     CMD_X     CMD_C     _____    MD_V     &kp RET    &kp BSPC  &kp TAB   _____     _____
 #ifdef THREE_THUMBS
                    	  _____  _____  _____    _____  _____  _____
 #else
