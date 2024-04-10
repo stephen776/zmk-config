@@ -77,7 +77,7 @@
                         bindings = <
    &kp ESC   _____     _____     _____    _____    &kp PG_UP  &kp HOME  &kp UP    &kp END   &caps_word
    &sk LSFT  &sk LCTL  &sk LALT  &sk LGUI HYPER    &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT &kp DEL
-   CMD_Z     CMD_X     CMD_C     _____    MD_V     &kp RET    &kp BSPC  &kp TAB   _____     _____
+   CMD_Z     CMD_X     CMD_C     _____    CMD_V     &kp RET    &kp BSPC  &kp TAB   _____     _____
 #ifdef THREE_THUMBS
                    	  _____  _____  _____    _____  _____  _____
 #else
