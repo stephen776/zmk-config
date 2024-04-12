@@ -3,8 +3,6 @@
 #include <dt-bindings/zmk/bt.h>
 
 
-/* include additional config*/
-#include "combos.dtsi"
 
 /* layers */
 #define DEFAULT 0
@@ -12,6 +10,8 @@
 #define SYM     2
 #define NUM     3
 #define FUN     4
+
+#include "combos.dtsi"
 
 #define XXXXX &none
 #define _____ &trans
