@@ -27,9 +27,9 @@ COMBO(wf_esc, &kp ESC,    LT3 LT2, DEFAULT)
 /*COMBO(capsw,  &caps_word, LM4 RM4, DEFAULT)*/
 
 /* cut/copy/paste */    
-COMBO(copy,   &kp LG(C),  LB3 LB2, DEFAULT)
+/* COMBO(copy,   &kp LG(C),  LB3 LB2, DEFAULT)
 COMBO(paste,  &kp LG(V),  LB2 LB1, DEFAULT)
-COMBO(cut,    &kp LG(X),  LB3 LB1, DEFAULT)
+COMBO(cut,    &kp LG(X),  LB3 LB1, DEFAULT) */
 
 /* 4 corners to lock mac */    
 COMBO(lock,   &kp LG(LC(Q)),  LT4 LB4 RT4 RB4, DEFAULT)
