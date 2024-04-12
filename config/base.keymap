@@ -9,9 +9,6 @@
 #define NUM     3
 #define FUN     4
 
-#include "behaviors.dtsi"
-#include "combos.dtsi"
-
 #define XXXXX &none
 #define _____ &trans
 
