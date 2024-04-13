@@ -36,7 +36,7 @@
           compatible = "zmk,conditional-layers";
           tri_layer {
             if-layers = <1 2>;
-            then-layer = <4>;
+            then-layer = <3>;
           };
         };
 
@@ -58,9 +58,9 @@
    &kp A  &kp R  &kp S  &kp T  &kp G      &kp M  &kp N  &kp E     &kp I   &kp O
    &kp Z  &kp X  &kp C  &kp D  &kp V      &kp K  &kp H  &kp COMMA &kp DOT &kp FSLH
 #ifdef THREE_THUMBS
-     &kp ESC &lt NAV RET &mt LSFT TAB    &lt NUM BSPC &lt SYM SPACE &kp DEL
+             _____  &kp LSFT  &mo NAV    &mo SYM  &kp SPACE  _____
 #else
-             &lt NAV RET &mt LSFT TAB    &lt NUM BSPC &lt SYM SPACE
+                    &kp LSFT  &mo NAV    &mo SYM  &kp SPACE
 #endif
                         >;
                 };
@@ -105,7 +105,7 @@
 #ifdef THREE_THUMBS
                    	  _____  _____  _____    _____  _____  _____
 #else
-                   	         _____  _____    _____  _____
+                   	         _____  _____    _____  &mo FUN
 #endif
                         >;
                 };
