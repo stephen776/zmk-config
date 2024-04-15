@@ -90,11 +90,11 @@
 
                 sym_layer {
 // -------------------------------     -------------------------------
-// |  !  |  @  | '#' |  $  |  %  |     |  ^  |  &  |  *  |     |  +  |
+// |  !  |  @  | '#' |  $  |  %  |     |  ^  |  &  |  *  | '|' |  \  |
 // -------------------------------     -------------------------------
-// |LSFT |LCTL |LALT |LGUI | '|' |     |  =  |  (  |  {  |  [  |  -  |
+// |  :  |  [  |  {  |  (  |  +  |     |  =  |LGUI |LALT |LCTL |LSFT |
 // -------------------------------     -------------------------------
-// |  :  |  ;  |  ~  |  `  |  \  |     |  _  |  )  |  }  |  ]  |     |
+// |  ;  |  ]  |  }  |  )  |  -  |     |  _  |  `  |  ~  |     |     |
 // -------------------------------     -------------------------------
 //             |     |     |     |     |     |     |     |
 //             -------------------     -------------------
@@ -102,6 +102,27 @@
    &kp EXCL  &kp AT   &kp HASH  &kp DLLR  &kp PRCNT  &kp CARET &kp AMPS  &kp KP_MULTIPLY XXXXX    &kp PLUS
    &sk LSFT  &sk LCTL &sk LALT  &sk LGUI  &kp PIPE   &kp EQUAL &kp LPAR  &kp LBRC        &kp LBKT &kp MINUS
    &kp COLON &kp SEMI &kp TILDE &kp GRAVE &kp BSLH   &kp UNDER &kp RPAR  &kp RBRC        &kp RBKT _____
+#ifdef THREE_THUMBS
+                   	  _____  _____  _____    _____  _____  _____
+#else
+                   	         _____  _____    _____  _____
+#endif
+                        >;
+                };
+                sym_layer {
+// -------------------------------     -------------------------------
+// |  !  |  @  | '#' |  $  |  %  |     |  ^  |  &  |  *  | '|' |  \  |
+// -------------------------------     -------------------------------
+// |  :  |  [  |  {  |  (  |  +  |     |  =  |LGUI |LALT |LCTL |LSFT |
+// -------------------------------     -------------------------------
+// |  ;  |  ]  |  }  |  )  |  -  |     |  _  |  `  |  ~  |     |     |
+// -------------------------------     -------------------------------
+//             |     |     |     |     |     |     |     |
+//             -------------------     -------------------
+                        bindings = <
+   &kp EXCL   &kp AT    &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET &kp AMPS   &kp KP_MULTIPLY  &kp PIPE  &kp BSLH
+   &kp COLON  &kp LBKT  &kp LBRC  &kp LPAR  &kp PLUS     &kp EQUAL &sk LGUI   &sk LALT         &sk LCTL  &sk LSFT
+   &kp SEMI   &kp RBKT  &kp RBRC  &kp RPAR  &kp MINUS    &kp UNDER &kp GRAVE  &kp TILDE        _____     _____
 #ifdef THREE_THUMBS
                    	  _____  _____  _____    _____  _____  _____
 #else
