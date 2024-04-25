@@ -133,18 +133,18 @@
 
                 fun_layer {
 // -------------------------------      -------------------------------
-// |BTCLR|BT P |BT N |     |     |      |MUTE | F7  | F8  | F9  | F12 |
+// | F12 | F7  | F8  | F9  |     |      |MUTE |BT_P |BT_N |     |     |
 // -------------------------------      -------------------------------
-// |LSFT |LCTL |LALT |LGUI |  Z+ |      |VOL+ | F4  | F5  | F6  | F11 |
+// | F11 | F4  | F5  | F6  |     |      |VOL+ |  Z+ | SCN |     |     |
 // -------------------------------      -------------------------------
-// |     |     |SCRN |     |  Z- |      |VOL- | F1  | F2  | F3  | F10 |
+// | F10 | F1  | F2  | F3  |     |      |VOL- |  Z- |     |     |     |
 // -------------------------------      -------------------------------
 //             |     |     |     |      |     |     |     |
 //             -------------------      -------------------
                         bindings = <
-   &bt BT_CLR  &bt BT_PRV &bt BT_NXT  _____     _____    &kp C_MUTE    &kp F7  &kp F8  &kp F9  &kp F12
-   &kp LSFT    &kp LCTL   &kp LALT    &kp LGUI  Z_IN     &kp C_VOL_UP  &kp F4  &kp F5  &kp F6  &kp F11
-   _____       _____      SCNSHT      _____     Z_OUT    &kp C_VOL_DN  &kp F1  &kp F2  &kp F3  &kp F10
+   &kp F12  &kp F7  &kp F8  &kp F9  _____    &kp C_MUTE    &bt BT_PRV  &bt BT_NXT   _____   _____
+   &kp F11  &kp F4  &kp F5  &kp F6  Z_IN     &kp C_VOL_UP  Z_IN        SCNSHT       _____   _____
+   &kp F10  &kp F1  &kp F2  &kp F3  Z_OUT    &kp C_VOL_DN  Z_OUT       _____        _____   _____
 #ifdef THREE_THUMBS
                    	  _____  _____  _____   _____  _____  _____
 #else
