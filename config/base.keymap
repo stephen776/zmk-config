@@ -10,6 +10,7 @@
 #define NUM     3
 #define FUN     4
 
+#include "behaviors.dtsi"
 #include "combos.dtsi"
 
 #define XXXXX &none
@@ -23,7 +24,7 @@
 #define CMD_V   &kp LG(V)
 #define CMD_X   &kp LG(X)
 #define CMD_Z   &kp LG(Z)
-#define HYPER   &sk LC(LS(LG(LALT)))
+#define HYPER   LC(LS(LG(LALT)))
 
 /* global config */
 &caps_word {
@@ -53,9 +54,9 @@
 //             | ESC | RET |SHFT |     | BSPC| SPC  | DEL |
 //             -------------------     --------------------
                         bindings = <
-   &kp Q  &kp W  &kp F  &kp P  &kp B      &kp J  &kp L  &kp U     &kp Y   &kp SQT
-   &kp A  &kp R  &kp S  &kp T  &kp G      &kp M  &kp N  &kp E     &kp I   &kp O
-   &kp Z  &kp X  &kp C  &kp D  &kp V      &kp K  &kp H  &kp COMMA &kp DOT &kp FSLH
+   &kp Q        &kp W        &kp F        &kp P        &kp B          &kp J  &kp L        &kp U          &kp Y         &kp SQT
+   &hml LSFT A  &hml LCTL R  &hml LALT S  &hml LGUI T  &hml HYPER G   &hmr HYPER M  &hmr RGUI N  &hmr RALT E    &hmr RCTRL I  &hmr RSFT O
+   &kp Z        &kp X        &kp C        &kp D        &kp V          &kp K  &kp H        &kp COMMA      &kp DOT       &kp FSLH
 #ifdef THREE_THUMBS
      &kp ESC &lt NAV RET &mt LSFT TAB    &lt NUM BSPC &lt SYM SPACE &kp DEL
 #else
@@ -75,9 +76,9 @@
 //             |     |     |     |      |     |     |     |
 //             -------------------      -------------------
                         bindings = <
-   &kp ESC   _____     _____     _____    _____    &kp PG_UP  &kp HOME  &kp UP    &kp END   &caps_word
-   &sk LSFT  &sk LCTL  &sk LALT  &sk LGUI HYPER    &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT &kp DEL
-   CMD_Z     CMD_X     CMD_C     _____    CMD_V     &kp RET    &kp BSPC  &kp TAB   _____     _____
+   &kp ESC   _____     _____     _____    _____       &kp PG_UP  &kp HOME  &kp UP    &kp END   &caps_word
+   &kp LSFT  &kp LCTL  &kp LALT  &kp LGUI &kp HYPER   &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT &kp DEL
+   CMD_Z     CMD_X     CMD_C     _____    CMD_V       &kp RET    &kp BSPC  &kp TAB   _____     _____
 #ifdef THREE_THUMBS
                    	  _____  _____  _____    _____  _____  _____
 #else
@@ -98,7 +99,7 @@
 //             -------------------     -------------------
                         bindings = <
    &kp EXCL   &kp AT    &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET &kp AMPS   &kp KP_MULTIPLY  &kp PIPE  &kp BSLH
-   &kp COLON  &kp LBKT  &kp LBRC  &kp LPAR  &kp PLUS     &kp EQUAL &sk LGUI   &sk LALT         &sk LCTL  &sk LSFT
+   &kp COLON  &kp LBKT  &kp LBRC  &kp LPAR  &kp PLUS     &kp EQUAL &kp LGUI   &kp LALT         &kp LCTL  &kp LSFT
    &kp SEMI   &kp RBKT  &kp RBRC  &kp RPAR  &kp MINUS    &kp UNDER &kp GRAVE  &kp TILDE        _____     _____
 #ifdef THREE_THUMBS
                    	  _____  _____  _____    _____  _____  _____
@@ -120,7 +121,7 @@
 //             -------------------      -------------------
                         bindings = <
    _____      &kp N7  &kp N8  &kp N9  _____       _____     _____     _____     _____     _____ 
-   &kp COLON  &kp N4  &kp N5  &kp N6  &kp PLUS    &kp EQUAL &sk LGUI  &sk LALT  &sk LCTL  &sk LSFT
+   &kp COLON  &kp N4  &kp N5  &kp N6  &kp PLUS    &kp EQUAL &kp LGUI  &kp LALT  &kp LCTL  &kp LSFT
    &kp SEMI   &kp N1  &kp N2  &kp N3  &kp MINUS   _____     _____     _____     _____     _____
 #ifdef THREE_THUMBS
                    	  _____  &kp N0  &kp DOT    _____  _____  _____
@@ -142,7 +143,7 @@
 //             -------------------      -------------------
                         bindings = <
    &bt BT_CLR  &bt BT_PRV &bt BT_NXT  _____     _____    &kp C_MUTE    &kp F7  &kp F8  &kp F9  &kp F12
-   &sk LSFT    &sk LCTL   &sk LALT    &sk LGUI  Z_IN     &kp C_VOL_UP  &kp F4  &kp F5  &kp F6  &kp F11
+   &kp LSFT    &kp LCTL   &kp LALT    &kp LGUI  Z_IN     &kp C_VOL_UP  &kp F4  &kp F5  &kp F6  &kp F11
    _____       _____      SCNSHT      _____     Z_OUT    &kp C_VOL_DN  &kp F1  &kp F2  &kp F3  &kp F10
 #ifdef THREE_THUMBS
                    	  _____  _____  _____   _____  _____  _____
