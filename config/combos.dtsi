@@ -21,7 +21,7 @@
         compatible = "zmk,combos";
 
 /* other */
-/* COMBO(wf_esc, &kp ESC,    LT3 LT2, DEFAULT) */
+ COMBO(wf_esc, &kp ESC,    LT3 LT2, DEFAULT) 
   
 /* A+O to activate caps_word */
 /*COMBO(capsw,  &caps_word, LM4 RM4, DEFAULT)*/

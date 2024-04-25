@@ -3,7 +3,6 @@
 #include <dt-bindings/zmk/bt.h>
 
 
-
 /* layers */
 #define DEFAULT 0
 #define NAV     1
