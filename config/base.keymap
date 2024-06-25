@@ -133,7 +133,7 @@
 
                 fun_layer {
 // -------------------------------      -------------------------------
-// | F12 | F7  | F8  | F9  |     |      |MUTE |BT_P |BT_N |     |     |
+// | F12 | F7  | F8  | F9  |     |      |MUTE |BT_P |BT_N |BT_CLR|     |
 // -------------------------------      -------------------------------
 // | F11 | F4  | F5  | F6  |     |      |VOL+ |  Z+ | SCN |     |     |
 // -------------------------------      -------------------------------
@@ -142,9 +142,9 @@
 //             |     |     |     |      |     |     |     |
 //             -------------------      -------------------
                         bindings = <
-   &kp F12  &kp F7  &kp F8  &kp F9  _____    &kp C_MUTE    &bt BT_PRV  &bt BT_NXT   _____   _____
-   &kp F11  &kp F4  &kp F5  &kp F6  Z_IN     &kp C_VOL_UP  Z_IN        SCNSHT       _____   _____
-   &kp F10  &kp F1  &kp F2  &kp F3  Z_OUT    &kp C_VOL_DN  Z_OUT       _____        _____   _____
+   &kp F12  &kp F7  &kp F8  &kp F9  _____    &kp C_MUTE    &bt BT_PRV  &bt BT_NXT   &bt BT_CLR  _____
+   &kp F11  &kp F4  &kp F5  &kp F6  Z_IN     &kp C_VOL_UP  Z_IN        SCNSHT       _____       _____
+   &kp F10  &kp F1  &kp F2  &kp F3  Z_OUT    &kp C_VOL_DN  Z_OUT       _____        _____       _____
 #ifdef THREE_THUMBS
                    	  _____  _____  _____   _____  _____  _____
 #else
