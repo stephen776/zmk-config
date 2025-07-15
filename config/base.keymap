@@ -4,7 +4,7 @@
 
 
 /* layers */
-#define COLEMAK 0
+#define DEFAULT 0
 #define QWERTY  1
 #define NAV     2 
 #define SYM     3 
@@ -36,8 +36,8 @@
         conditional_layers {
           compatible = "zmk,conditional-layers";
           tri_layer {
-            if-layers = <1 2>;
-            then-layer = <4>;
+            if-layers = <2 3>;
+            then-layer = <5>;
           };
         };
 
@@ -167,7 +167,7 @@
                         bindings = <
    &kp F12  &kp F7  &kp F8  &kp F9  _____    &kp C_MUTE    &bt BT_PRV  &bt BT_NXT   &bt BT_CLR  &bt BT_SEL 2 
    &kp F11  &kp F4  &kp F5  &kp F6  Z_IN     &kp C_VOL_UP  Z_IN        SCNSHT       _____       &bt BT_SEL 1 
-   &kp F10  &kp F1  &kp F2  &kp F3  Z_OUT    &kp C_VOL_DN  Z_OUT       &to COLEMAK  &to QWERTY  &bt BT_SEL 0
+   &kp F10  &kp F1  &kp F2  &kp F3  Z_OUT    &kp C_VOL_DN  Z_OUT       &to DEFAULT  &to QWERTY  &bt BT_SEL 0
 #ifdef THREE_THUMBS
                    	  _____  _____  _____   _____  _____  _____
 #else
