@@ -67,18 +67,18 @@
 
                 nav_layer { 
 // -------------------------------      -------------------------------
-// | ESC |     |     |     |     |      |PGUP |HOME | UP  | END | CAP |
+// | ESC |     |     |     |     |      |HOME |PGDN |PGUP | END | CAP |
 // -------------------------------      -------------------------------
-// |LSFT |LCTL |LALT |LGUI |HYPER|      |PGDN |LEFT |DOWN |RIGHT| DEL |
+// |LSFT |LCTL |LALT |LGUI |HYPER|      |LEFT |DOWN |  UP |RIGHT| DEL |
 // -------------------------------      -------------------------------
 // |CMD_Z|CMD_X|CMD_C|     |CMD_V|      | ENT |BPSC | TAB |     |     |
 // -------------------------------      -------------------------------
 //             |     |     |     |      |     |     |     |
 //             -------------------      -------------------
                         bindings = <
-   &kp ESC   _____     _____     _____    _____       &kp PG_UP  &kp HOME  &kp UP    &kp END   &caps_word
-   &kp LSFT  &kp LCTL  &kp LALT  &kp LGUI &kp HYPER   &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT &kp DEL
-   CMD_Z     CMD_X     CMD_C     _____    CMD_V       &kp RET    &kp BSPC  &kp TAB   _____     _____
+   &kp ESC   _____     _____     _____    _____       &kp HOME  &kp PG_DN &kp PG_UP &kp END   &caps_word
+   &kp LSFT  &kp LCTL  &kp LALT  &kp LGUI &kp HYPER   &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT &kp DEL
+   CMD_Z     CMD_X     CMD_C     _____    CMD_V       &kp RET   &kp BSPC  &kp TAB   _____     _____
 #ifdef THREE_THUMBS
                    	  _____  _____  _____    _____  _____  _____
 #else
