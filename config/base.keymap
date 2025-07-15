@@ -5,10 +5,11 @@
 
 /* layers */
 #define DEFAULT 0
-#define NAV     1
-#define SYM     2
-#define NUM     3
-#define FUN     4
+#define QWERTY  1
+#define NAV     2 
+#define SYM     3 
+#define NUM     4 
+#define FUN     5 
 
 #include "behaviors.dtsi"
 #include "combos.dtsi"
@@ -57,6 +58,28 @@
    &kp Q        &kp W        &kp F        &kp P        &kp B          &kp J  &kp L        &kp U          &kp Y         &kp SQT
    &hml LSFT A  &hml LCTL R  &hml LALT S  &hml LGUI T  &hml HYPER G   &hmr HYPER M  &hmr RGUI N  &hmr RALT E    &hmr RCTRL I  &hmr RSFT O
    &kp Z        &kp X        &kp C        &kp D        &kp V          &kp K  &kp H        &kp COMMA      &kp DOT       &kp FSLH
+#ifdef THREE_THUMBS
+     &kp ESC &lt NAV RET &mt LSFT TAB    &lt NUM BSPC &lt SYM SPACE &kp DEL
+#else
+             &lt NAV RET &mt LSFT TAB    &lt NUM BSPC &lt SYM SPACE
+#endif
+                        >;
+                };
+
+                qwerty_layer {
+// -------------------------------     --------------------------------
+// |  q  |  w  |  f  |  p  |  b  |     |  j  |  l   |  u  |  y  |  '  |
+// -------------------------------     --------------------------------
+// |  a  |  r  |  s  |  t  |  g  |     |  m  |  n   |  e  |  i  |  o  |
+// -------------------------------     --------------------------------
+// |  z  |  x  |  c  |  d  |  v  |     |  k  |  h   |  ,  |  .  |  /  |
+// -------------------------------     --------------------------------
+//             | ESC | RET |SHFT |     | BSPC| SPC  | DEL |
+//             -------------------     --------------------
+                        bindings = <
+   &kp Q        &kp W        &kp E        &kp R        &kp T          &kp Y  &kp U        &kp I          &kp O         &kp P
+   &hml LSFT A  &hml LCTL S  &hml LALT D  &hml LGUI F  &hml HYPER G   &hmr HYPER H  &hmr RGUI J  &hmr RALT K    &hmr RCTRL L  &hmr RSFT SEMI 
+   &kp Z        &kp X        &kp C        &kp V        &kp B          &kp N  &kp M        &kp COMMA      &kp DOT       &kp FSLH
 #ifdef THREE_THUMBS
      &kp ESC &lt NAV RET &mt LSFT TAB    &lt NUM BSPC &lt SYM SPACE &kp DEL
 #else
@@ -144,7 +167,7 @@
                         bindings = <
    &kp F12  &kp F7  &kp F8  &kp F9  _____    &kp C_MUTE    &bt BT_PRV  &bt BT_NXT   &bt BT_CLR  &bt BT_SEL 2 
    &kp F11  &kp F4  &kp F5  &kp F6  Z_IN     &kp C_VOL_UP  Z_IN        SCNSHT       _____       &bt BT_SEL 1 
-   &kp F10  &kp F1  &kp F2  &kp F3  Z_OUT    &kp C_VOL_DN  Z_OUT       _____        _____       &bt BT_SEL 0
+   &kp F10  &kp F1  &kp F2  &kp F3  Z_OUT    &kp C_VOL_DN  Z_OUT       &to COLEMAK  &to QWERTY  &bt BT_SEL 0
 #ifdef THREE_THUMBS
                    	  _____  _____  _____   _____  _____  _____
 #else
