@@ -46,7 +46,7 @@
 
                 default_layer {
 // -------------------------------     --------------------------------
-// |  q  |  w  |  f  |  p  |  b  |     |  j  |  l   |  u  |  y  |  '  |
+// |  q  |  w  |  f  |  p  |  b  |     |  j  |  l   |  u  |  y  |  ;  |
 // -------------------------------     --------------------------------
 // |  a  |  r  |  s  |  t  |  g  |     |  m  |  n   |  e  |  i  |  o  |
 // -------------------------------     --------------------------------
@@ -55,7 +55,7 @@
 //             | ESC | RET |SHFT |     | BSPC| SPC  | DEL |
 //             -------------------     --------------------
                         bindings = <
-   &kp Q        &kp W        &kp F        &kp P        &kp B          &kp J  &kp L        &kp U          &kp Y         &kp SQT
+   &kp Q        &kp W        &kp F        &kp P        &kp B          &kp J  &kp L        &kp U          &kp Y         &kp SEMI 
    &hml LSFT A  &hml LCTL R  &hml LALT S  &hml LGUI T  &hml HYPER G   &hmr HYPER M  &hmr RGUI N  &hmr RALT E    &hmr RCTRL I  &hmr RSFT O
    &kp Z        &kp X        &kp C        &kp D        &kp V          &kp K  &kp H        &kp COMMA      &kp DOT       &kp FSLH
 #ifdef THREE_THUMBS
@@ -100,12 +100,12 @@
 //             -------------------      -------------------
                         bindings = <
    &kp ESC   _____     _____     _____    _____       &kp HOME  &kp PG_DN &kp PG_UP &kp END   &caps_word
-   &kp LSFT  &kp LCTL  &kp LALT  &kp LGUI &kp HYPER   &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT &kp DEL
-   CMD_Z     CMD_X     CMD_C     _____    CMD_V       &kp RET   &kp BSPC  &kp TAB   _____     _____
+   &kp LSFT  &kp LCTL  &kp LALT  &kp LGUI &kp HYPER   &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT &kp SQT
+   CMD_Z     CMD_X     CMD_C     _____    CMD_V       &kp RET   &kp BSPC  &kp DEL   &kp TAB   &kp DQT
 #ifdef THREE_THUMBS
-                   	  _____  _____  _____    _____  _____  _____
+                   	  _____  _____  _____    &kp DEL  _____  _____
 #else
-                   	         _____  _____    _____  _____
+                   	         _____  _____    &kp DEL  _____
 #endif
                         >;
                 };
