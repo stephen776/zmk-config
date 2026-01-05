@@ -121,9 +121,9 @@
 //             |     |     |     |     |     |     |     |
 //             -------------------     -------------------
                         bindings = <
-   &kp EXCL  &kp AT    &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET &kp AMPS   &kp KP_MULTIPLY  &kp PIPE  &kp BSLH
-   &kp COLON &kp LBKT  &kp LBRC  &kp LPAR  &kp PLUS     &kp EQUAL &kp LGUI   &kp LALT         &kp LCTL  &kp LSFT
-   &kp SEMI  &kp RBKT  &kp RBRC  &kp RPAR  &kp MINUS    &kp UNDER &kp GRAVE  &kp TILDE        _____     _____
+   &kp EXCL &kp AT    &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET &kp AMPS   &kp KP_MULTIPLY  &kp PIPE  &kp BSLH
+   &kp SQT  &kp LBKT  &kp LBRC  &kp LPAR  &kp PLUS     &kp EQUAL &kp LGUI   &kp LALT         &kp LCTL  &kp LSFT
+   &kp DQT  &kp RBKT  &kp RBRC  &kp RPAR  &kp MINUS    &kp UNDER &kp GRAVE  &kp TILDE        _____     _____
 #ifdef THREE_THUMBS
                    	  _____  _____  _____    _____  _____  _____
 #else
