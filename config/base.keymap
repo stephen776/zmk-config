@@ -5,11 +5,10 @@
 
 /* layers */
 #define DEFAULT 0
-#define QWERTY  1
-#define NAV     2 
-#define SYM     3 
-#define NUM     4 
-#define FUN     5 
+#define NAV     1 
+#define SYM     2 
+#define NUM     3 
+#define FUN     4 
 
 #include "behaviors.dtsi"
 #include "combos.dtsi"
@@ -36,8 +35,8 @@
         conditional_layers {
           compatible = "zmk,conditional-layers";
           tri_layer {
-            if-layers = <2 3>;
-            then-layer = <5>;
+            if-layers = <1 2>;
+            then-layer = <4>;
           };
         };
 
@@ -45,28 +44,6 @@
                 compatible = "zmk,keymap";
 
                 default_layer {
-// -------------------------------     --------------------------------
-// |  q  |  w  |  f  |  p  |  b  |     |  j  |  l   |  u  |  y  |  '  |
-// -------------------------------     --------------------------------
-// |  a  |  r  |  s  |  t  |  g  |     |  m  |  n   |  e  |  i  |  o  |
-// -------------------------------     --------------------------------
-// |  z  |  x  |  c  |  d  |  v  |     |  k  |  h   |  ,  |  .  |  /  |
-// -------------------------------     --------------------------------
-//             | ESC | RET |SHFT |     | BSPC| SPC  | DEL |
-//             -------------------     --------------------
-                        bindings = <
-   &kp Q        &kp W        &kp F        &kp P        &kp B          &kp J  &kp L        &kp U          &kp Y         &kp SQT 
-   &hml LSFT A  &hml LCTL R  &hml LALT S  &hml LGUI T  &hml HYPER G   &hmr HYPER M  &hmr RGUI N  &hmr RALT E    &hmr RCTRL I  &hmr RSFT O
-   &kp Z        &kp X        &kp C        &kp D        &kp V          &kp K  &kp H        &kp COMMA      &kp DOT       &kp FSLH
-#ifdef THREE_THUMBS
-     &kp ESC &lt NAV RET &mt LSFT TAB    &lt NUM BSPC &lt SYM SPACE &kp DEL
-#else
-             &lt NAV RET &mt LSFT TAB    &lt NUM BSPC &lt SYM SPACE
-#endif
-                        >;
-                };
-
-                qwerty_layer {
 // -------------------------------     --------------------------------
 // |  q  |  w  |  f  |  p  |  b  |     |  j  |  l   |  u  |  y  |  '  |
 // -------------------------------     --------------------------------
