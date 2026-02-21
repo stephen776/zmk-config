@@ -12,15 +12,25 @@
 #     shield: reviung41
 #
 ---
+# include:
+#   - board: nice_nano_v2
+#     shield: corne_left nice_view_adapter nice_view
+#   - board: nice_nano_v2
+#     shield: corne_right nice_view_adapter nice_view
+#   - board: nice_nano_v2
+#     shield: settings_reset
+#   - board: zaphod
+
 include:
   - board: nice_nano_v2
-    shield: corne_left nice_view_adapter nice_view
+    shield: hshs52_left nice_view_adapter nice_view
+    cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
   - board: nice_nano_v2
-    shield: corne_right nice_view_adapter nice_view
+    shield: hshs52_right nice_view_adapter nice_view
+    cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
   - board: nice_nano_v2
     shield: settings_reset
-  - board: nice_nano_v2
-    shield: cradio_left
-  - board: nice_nano_v2
-    shield: cradio_right
-  - board: zaphod
+  - board: seeeduino_xiao_ble
+    shield: settings_reset
+  - board: seeeduino_xiao_ble
+    shield: hshs52_dongle prospector_adapter
