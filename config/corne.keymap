@@ -5,13 +5,6 @@
  */
 
 
-#ifdef CONFIG_SHIELD_NICE_VIEW_ADAPTER
-/* make the Nice! View work */
-&nice_view_spi {
-    cs-gpios = <&pro_micro 0 GPIO_ACTIVE_HIGH>;
-};
-#endif
-
 /* source keypos helpers*/
 #include "../keypos_def/keypos_36keys.h"
 
