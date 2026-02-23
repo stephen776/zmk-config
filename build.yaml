@@ -33,4 +33,4 @@ include:
   - board: seeeduino_xiao_ble
     shield: settings_reset
   - board: seeeduino_xiao_ble
-    shield: corne_dongle prospector_adapter
+    shield: corne_dongle dongle_screen
